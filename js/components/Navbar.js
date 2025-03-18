@@ -14,7 +14,7 @@ class Navbar extends HTMLElement {
     const contactLink = this.getAttribute("contact") || "#";
 
     this.innerHTML = `
-      <nav class="navbar fixed top-0 left-0 w-full z-50 transition-all duration-500">
+      <nav class="navbar fixed top-0 left-0 w-full z-50 transition-all duration-500 px-20">
         <div class="flex justify-between items-center p-4 max-w-[1920px] w-full mx-auto">
           <a href="${homeLink}" class="text-xl font-bold flex items-center gap-4">
             <img src="../../assets/images/outdoor_icon.png" alt="Menu" class="logo cursor-pointer transition-all duration-500" />

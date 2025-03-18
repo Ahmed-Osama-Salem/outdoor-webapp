@@ -6,30 +6,68 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Kufi+Arabic:wght@100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./src/output.css" />
     <title>Outdoor Dreams</title>
   </head>
-  <body class="bg-gray-100 text-gray-900">
+  <body class="bg-gray-100 text-gray-900 h-[2000px]">
     <main-navbar
       home="/index.html"
       about="/about.html"
       contact="/contact.html"
     ></main-navbar>
-
-    <div class="h-[2000px]">
-      <div class="flex justify-center min-h-screen bg-gray-100">
-        <img
-          src="./assets/images/hero_section.jpg"
-          alt="hero"
-          class="w-1/2 h-1/2"
-        />
+    <section class="bg-[var(--color-background)]">
+      <div
+        class="max-w-[1920px] w-full mx-auto h-[100vh] max-h-[1080px] relative bg-background"
+      >
+        <div class="bg-black w-[75%] absolute right-0 h-full">
+          <div class="w-full h-full relative overflow-hidden">
+            <img
+              src="./assets/images/hero_section.jpg"
+              class="w-full h-full object-fill"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="w-full h-full relative flex items-center">
+          <div
+            class="w-[38rem] absolute h-[750px] bg-white shadow-2xl left-56 bottom-24"
+          >
+            <div
+              class="decorator-line absolute z-30 max-w-[14.375em] rotate-[143deg]"
+              data-color="blue"
+              data-direction="right"
+              data-animate="true"
+            ></div>
+            <div class="p-[3.625rem] pb-[2.84375rem] pl-[5.5rem] flex flex-col">
+              <h1
+                class="text-[5.15em] font-Playfair leading-24 mb-[0.6em] font-Montserrat text-secondary-500 font-light tracking-[6px]"
+              >
+                The best memories are made outdoors
+              </h1>
+              <button
+                class="bg-primary-500 w-fit mb-[14px] px-8 py-3.5 rounded-sm text-white"
+              >
+                Get Started
+              </button>
+              <span class="text-[19px] text-secondary-100 font-medium"
+                >Established in 2005
+              </span>
+            </div>
+            <div class="bg-background absolute bottom-0 py-[21px] px-[42px]">
+              <img src="assets/images/hero-brand.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="bottom-28 absolute left-24">
+          <img src="./assets/images/home-hero-arrow.svg" alt="" />
+        </div>
       </div>
-      <div class="tester">asd</div>
-    </div>
-    <main-footer></main-footer>
+    </section>
+
+    <!-- <main-footer></main-footer> -->
 
     <script src="./js/components/Navbar.js"></script>
     <script src="./js/components/Footer.js"></script>
