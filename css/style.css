@@ -2,6 +2,7 @@
 /* @tailwind base; */
 /* @tailwind components; */
 @tailwind utilities;
+
 @theme {
   --color-primary-500: #7aac57;
   --color-secondary-500: #40403a;
@@ -10,9 +11,85 @@
   --color-blue-500: #5a90f1;
   --color-brown-500: #342e2b;
   --color-background: #fcf9f7;
+  --color-light-dark: #40403a;
+  --bg-light-dark: #40403a;
+  --light-grey: #eae6e6;
+  --dark-black: #342e2b;
+  --green-main: #7bac58;
+  --green-hover: #896c49;
   --font-Montserrat: "Montserrat", sans-serif;
 }
 
+/* Default Navbar Styles */
 .navbar {
-  @apply text-[#40403a] py-11 fixed top-0 left-0 w-full z-50 bg-gradient-to-b from-[#fcf9f7]/50 to-transparent font-Montserrat;
+  @apply text-[var(--color-secondary-500)] py-6 fixed top-0 left-0 w-full z-50 bg-gradient-to-b from-[var(--color-background)]/50 to-transparent transition-all duration-500;
+}
+
+/* Moves navbar out of view */
+.move-up {
+  @apply -translate-y-full opacity-0;
+}
+
+/* Navbar returns with solid background */
+.scrolled {
+  @apply translate-y-0 opacity-100 bg-[var(--color-background)] shadow-md py-1 flex justify-between items-center;
+}
+
+/* Restore original gradient when scrolling to top */
+.original {
+  @apply bg-gradient-to-b from-[var(--color-background)]/50 to-transparent;
+}
+
+/* Nav link hover animation */
+.nav-link {
+  @apply relative text-[18px] font-bold uppercase tracking-[2px]  transition-colors duration-300;
+}
+
+.nav-link::after {
+  content: "";
+  @apply absolute left-0 bottom-0 w-full h-[4px] translate-y-2 bg-[var(--color-blue-500)] scale-x-0 origin-left transition-transform duration-300;
+}
+
+.nav-link:hover::after {
+  @apply scale-x-100;
+}
+
+/* Collapsed link with dropdown */
+.collapsed-link {
+  @apply relative flex items-center gap-2 text-[18px] font-bold uppercase tracking-[2px]  cursor-pointer;
+}
+
+.collapsed-link::after {
+  content: "▼"; /* Arrow icon */
+  @apply text-[14px] transition-transform duration-300;
+}
+
+.collapsed-link:hover::after {
+  @apply rotate-180; /* Rotates arrow when hovered */
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  @apply absolute left-0 space-y-5 w-[18em] bg-[var(--light-grey)] shadow-md py-2 opacity-0 invisible transition-opacity duration-300;
+}
+
+.collapsed-link:hover + .dropdown-menu,
+.dropdown-menu:hover {
+  @apply opacity-100 visible;
+}
+
+.dropdown-menu li {
+  @apply px-4 py-2 transition-colors duration-200;
+}
+
+.start-btn {
+  @apply bg-[var(--bg-light-dark)] hover:bg-[var(--dark-black)];
+}
+
+.start-btn-scrolled {
+  @apply bg-[var(--green-main)] hover:bg-[var(--green-hover)];
+}
+/* Shrink logo when scrolled */
+.small-logo {
+  @apply w-[45px] h-[45px] transition-all duration-300;
 }
