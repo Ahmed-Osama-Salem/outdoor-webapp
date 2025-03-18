@@ -39,6 +39,8 @@
     );
     --color-primary-500: #7aac57;
     --color-background: #fcf9f7;
+    --color-secondary-500: #40403a;
+    --font-Montserrat: "Montserrat", sans-serif;
   }
 }
 @layer base {
@@ -402,6 +404,9 @@
   .flex-col {
     flex-direction: column;
   }
+  .transform {
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
   .items-center {
     align-items: center;
   }
@@ -441,6 +446,9 @@
   }
   .bg-blue-500 {
     background-color: var(--color-blue-500);
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
   }
   .bg-gray-100 {
     background-color: var(--color-gray-100);
@@ -523,6 +531,8 @@
   }
   .pl-\[5\.5em\] {
     padding-left: 5.5em;
+  .py-10 {
+    padding-block: calc(var(--spacing) * 10);
   }
   .text-center {
     text-align: center;
@@ -623,6 +633,15 @@
   .ease-in-out {
     --tw-ease: var(--ease-in-out);
     transition-timing-function: var(--ease-in-out);
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
+  }
+  .transition {
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
   .hover\:text-gray-300 {
     &:hover {
@@ -833,11 +852,12 @@
   width: 100%;
   --tw-gradient-position: to bottom in oklab;
   background-image: linear-gradient(var(--tw-gradient-stops));
-  --tw-gradient-from: #fcf9f7;
+  --tw-gradient-from: color-mix(in oklab, #fcf9f7 50%, transparent);
   --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   --tw-gradient-to: transparent;
   --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   padding-block: calc(var(--spacing) * 11);
+  font-family: var(--font-Montserrat);
   color: #40403a;
 }
 .container {
@@ -862,11 +882,43 @@
   }
 }
 @property --tw-translate-x {
+@property --tw-rotate-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: rotateX(0);
+}
+@property --tw-rotate-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: rotateY(0);
+}
+@property --tw-rotate-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: rotateZ(0);
+}
+@property --tw-skew-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: skewX(0);
+}
+@property --tw-skew-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: skewY(0);
+}
+@property --tw-space-x-reverse {
   syntax: "*";
   inherits: false;
   initial-value: 0;
 }
 @property --tw-translate-y {
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@property --tw-font-weight {
   syntax: "*";
   inherits: false;
   initial-value: 0;
@@ -905,6 +957,11 @@
   syntax: "*";
   inherits: false;
   initial-value: 0;
+}
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
 }
 @property --tw-gradient-position {
   syntax: "*";
@@ -1014,4 +1071,5 @@
 @property --tw-ease {
   syntax: "*";
   inherits: false;
+}
 }

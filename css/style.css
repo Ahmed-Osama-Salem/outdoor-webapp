@@ -10,16 +10,9 @@
   --color-blue-500: #5a90f1;
   --color-brown-500: #342e2b;
   --color-background: #fcf9f7;
-}
-.navbar {
-  @apply text-[#40403a]  py-11 fixed top-0 left-0 w-full z-50 bg-gradient-to-b from-[#fcf9f7] to-transparent;
+  --font-Montserrat: "Montserrat", sans-serif;
 }
 
-.container {
-  @apply mx-[0.9375em] max-w-[83.75em] flex flex-wrap 
-  sm:mx-[1.25em] 
-  md:mx-[1.875em] 
-  lg:mx-[2.5em] 
-  xl:mx-[3.125em] 
-  2xl:mx-auto;
+.navbar {
+  @apply text-[#40403a] py-11 fixed top-0 left-0 w-full z-50 bg-gradient-to-b from-[#fcf9f7]/50 to-transparent font-Montserrat;
 }
