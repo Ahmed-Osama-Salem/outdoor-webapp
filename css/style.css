@@ -1,8 +1,19 @@
 @import "tailwindcss";
-@tailwind base;
-@tailwind components;
+/* @tailwind base; */
+/* @tailwind components; */
 @tailwind utilities;
-
-.navbar {
-  @apply text-[#40403a] py-11 fixed top-0 left-0 w-full z-50 bg-gradient-to-b from-[#fcf9f7] to-transparent;
+@theme {
+  --color-primary-500: #7aac57;
+  --color-secondary-500: #40403a;
+  --color-secondary-100: #7e7e72;
+  --color-white: #ffffff;
+  --color-blue-500: #5a90f1;
+  --color-brown-500: #342e2b; 
+  --color-background: #fcf9f7;
 }
+.navbar {
+  @apply text-[#40403a]  py-11 fixed top-0 left-0 w-full z-50 bg-gradient-to-b from-[#fcf9f7] to-transparent;
+}
+/* .tester {
+  @apply bg-primary
+} */
