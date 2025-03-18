@@ -8,12 +8,11 @@
   --color-secondary-100: #7e7e72;
   --color-white: #ffffff;
   --color-blue-500: #5a90f1;
-  --color-brown-500: #342e2b; 
+  --color-brown-500: #342e2b;
   --color-background: #fcf9f7;
+  --font-Montserrat: "Montserrat", sans-serif;
 }
+
 .navbar {
-  @apply text-[#40403a]  py-11 fixed top-0 left-0 w-full z-50 bg-gradient-to-b from-[#fcf9f7] to-transparent;
+  @apply text-[#40403a] py-11 fixed top-0 left-0 w-full z-50 bg-gradient-to-b from-[#fcf9f7]/50 to-transparent font-Montserrat;
 }
-/* .tester {
-  @apply bg-primary
-} */
