@@ -21,6 +21,23 @@
   --font-Playfair: "Playfair Display", serif;
 }
 
+
+@font-face {
+  font-family: FS Neruda;
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  src: url(../assets/fonts/446c481.woff2) format("woff2"),url(../assets/fonts/810905b.woff) format("woff")
+}
+
+@font-face {
+  font-family: FS Neruda;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url(../assets/fonts/19ca471.woff2) format("woff2"),url(../assets/fonts/92d5638.woff) format("woff")
+}
+
 /* Default Navbar Styles */
 .navbar {
   @apply text-[var(--color-secondary-500)] py-6 fixed top-0 left-0 w-full z-50 bg-gradient-to-b from-[var(--color-background)]/50 to-transparent transition-all duration-500;
@@ -94,3 +111,6 @@
 .small-logo {
   @apply w-[45px] h-[45px] transition-all duration-300;
 }
+
+
+
