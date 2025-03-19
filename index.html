@@ -18,24 +18,29 @@
       about="/about.html"
       contact="/contact.html"
     ></main-navbar>
-    <section class="max-w-[1920px] relative mx-auto h-[100vh] max-h-[1080px]  bg-[var(--color-background)]">
-      <div
-        class=" h-full w-full absolute "
-      >
-        <div class=" w-full  lg:w-[75%] absolute   top-0  right-0  h-full overflow-hidden">
+
+    <!-- hero section -->
+    <section
+      class="max-w-[1920px] relative mx-auto h-[100vh] max-h-[1080px] bg-[var(--color-background)]"
+    >
+      <!-- hero image -->
+      <div class="h-full w-full absolute">
+        <div
+          class="w-full lg:w-[75%] absolute top-0 right-0 h-full overflow-hidden"
+        >
           <div
             class="absolute z-[1] w-[calc(100%+2em)] h-[71%] left-0 top-0 bg-gradient-to-r bg-[200%_100%] bg-[-50%_0] overflow-hidden transition-[background-position] delay-300"
           ></div>
-          <div class="absolute  ">
+          <div class="absolute">
             <img src="./assets/images/hero_section.jpg" class="" alt="" />
           </div>
         </div>
       </div>
 
       <!-- hero content -->
-      <div class="w-full relative h-full z-50 flex items-center">
+      <div class="w-full relative h-full flex items-center">
         <div
-          class="w-[38em] absolute h-[750px] z-50 bg-white shadow-2xl left-56 bottom-[calc(100%_-_97%)]"
+          class="w-[38em] absolute h-[750px] bg-white shadow-2xl left-56 bottom-[calc(100%_-_97%)]"
         >
           <div class="p-[3.625rem] pb-[2.84375rem] pl-[5.5rem] flex flex-col">
             <h1
@@ -62,13 +67,15 @@
       </div>
     </section>
 
-    <!-- <section class="bg-[var(--color-background)]">
+    <!-- what we do  -->
+    <section class="bg-white">
       <div
         class="max-w-[1920px] w-full mx-auto h-[100vh] max-h-[1080px] flex items-center relative"
       >
         <div
-          class="mx-auto px-6 py-12 grid grid-cols-1 w-[90vw] md:grid-cols-2 gap-8 items-center"
+          class="mx-auto grid grid-cols-1 w-[90vw] md:grid-cols-2 items-center"
         >
+          <!-- what we do projects -->
           <div class="grid grid-cols-2 gap-4">
             <div>
               <img
@@ -91,14 +98,16 @@
               </p>
             </div>
           </div>
+
+          <!-- what we do content -->
           <div class="flex flex-col gap-6">
             <h3
-              class="text-primary-500 font-Montserrat font-bold uppercase tracking-wide text-sm"
+              class="text-primary-500 font-Montserrat font-bold uppercase text-base tracking-widest"
             >
               What We Do
             </h3>
             <p
-              class="text-5xl font-Playfair text-secondary-500 font-semibold mt-2 leading-relaxed"
+              class="text-5xl font-Neruda font-light text-secondary-500 mt-2 leading-relaxed"
             >
               Thoughtfully created patios and swimming pools for homeowners
               throughout Richmond and Central Virginia.
@@ -109,11 +118,13 @@
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
 
     <!-- what we do image -->
 
-    <!-- <section class="h-screen w-screen flex items-end">
+    <section
+      class="h-screen w-screen max-h-[1080px] max-w-[1920px] mx-auto bg-white flex items-end"
+    >
       <div class="h-[80%] w-[85%]">
         <img
           src="./assets/images/what-we-do-banner.jpg"
@@ -121,42 +132,59 @@
           alt=""
         />
       </div>
-    </section> -->
+    </section>
 
-    <!--  -->
-    <!-- <section class="bg-brown-500">
+    <!-- project section -->
+    <section
+      class="bg-brown-500 h-screen max-h-[1080px] max-w-[1920px] mx-auto"
+    >
       <div
-        class="w-full py-16 flex flex-col lg:flex-row items-center justify-end"
+        class="w-full py-36 flex flex-col lg:flex-row items-center justify-end"
       >
         <div class="lg:w-1/2">
-          <h3 class="text-primary-500 font-semibold text-sm uppercase">
+          <h3
+            class="text-primary-500 font-Montserrat font-semibold text-xl tracking-widest uppercase"
+          >
             The Outdoor Dreams Difference
           </h3>
-          <h1 class="text-7xl font-Playfair mt-2 text-white leading-tight">
+          <h1
+            class="text-8xl font-Neruda tracking-widest mt-2 text-white leading-tight"
+          >
             What sets our <br />
             projects apart
           </h1>
-          <div class="text-white mt-8 space-y-8">
-            <div>
-              <h2 class="text-xl font-semibold">Comprehensive Service</h2>
-              <p class="mt-2">
-                We take a holistic approach to every project and provide
-                turn-key service to ensure that you are left with an outdoor
-                space that is immediately ready to enjoy. No dealing with
-                multiple contractors—we handle everything.
-              </p>
+
+          <!-- Accordion  -->
+          <div class="text-white w-[80%] mt-8 space-y-8">
+            <div class="border-b border-gray-900">
+              <button
+                class="w-full text-left px-5 py-4 flex justify-between items-center focus:outline-none accordion-header"
+              >
+                <span class="text-lg font-semibold">Comprehensive Service</span>
+                <span class="text-xl transition-transform transform">+</span>
+              </button>
+              <div
+                class="accordion-content px-5 pb-0 max-h-0 overflow-hidden transition-all duration-300"
+              >
+                <p class="py-4">
+                  We take a holistic approach to every project and provide
+                  turn-key service...
+                </p>
+              </div>
             </div>
-            <div>
-              <h2 class="text-xl font-semibold">Consistent Process</h2>
-              <p class="mt-2">
-                We follow a consistent process that creates reliable results. We
-                take the guesswork out of contracting by setting realistic
-                expectations and charting a step-by-step roadmap from start to
-                finish.
-              </p>
-            </div>
-            <div>
-              <h2 class="text-xl font-semibold">Active Design Method</h2>
+
+            <div class="border-b border-gray-900">
+              <button
+                class="w-full text-left px-5 py-4 flex justify-between items-center focus:outline-none accordion-header"
+              >
+                <span class="text-lg font-semibold">Consistent Process</span>
+                <span class="text-xl transition-transform transform">+</span>
+              </button>
+              <div
+                class="accordion-content px-5 pb-0 max-h-0 overflow-hidden transition-all duration-300"
+              >
+                <p class="py-4">Our process ensures smooth execution...</p>
+              </div>
             </div>
           </div>
         </div>
@@ -168,9 +196,37 @@
           />
         </div>
       </div>
-    </section> -->
+    </section>
     <!-- <main-footer></main-footer> -->
 
+    <section
+      class="h-screen w-screen flex items-center  justify-center relative bg-white"
+    >
+      <div class="absolute bottom-0 left-0 w-[85%] h-[80%]">
+        <img
+          src="./assets/images/planing.jpg"
+          class="w-full h-full object-cover"
+          alt=""
+        />
+      </div>
+
+      <div class="z-10 h-[400px] bg-white flex flex-col gap-8 items-center justify-center  p-40 mt-60 ">
+        <p class="text-sm text-green-600 font-semibold">
+          STILL PLANNING? WE'VE GOT YOU COVERED
+        </p>
+        <h2 class="text-5xl  font-Neruda  font-light mt-2">
+          We've created some free resources to <br> help you through the planning
+          process
+        </h2>
+        <button
+          class="mt-4 bg-primary-500 text-xl text-white px-6 py-2  "
+        >
+          Planning Resources
+        </button>
+      </div>
+    </section>
+
+    <script src="./js/main.js"></script>
     <script src="./js/components/Navbar.js"></script>
     <script src="./js/components/Footer.js"></script>
   </body>
