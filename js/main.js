@@ -1,20 +1,16 @@
 document.querySelectorAll(".accordion-header").forEach(button => {
     button.addEventListener("click", function () {
         const content = this.nextElementSibling;
-        const icon = this.querySelector("span:last-child");
+        const isActive = this.classList.contains("active");
 
-        if (content.style.maxHeight) {
-            // Close the currently open accordion
-            content.style.maxHeight = null;
-            icon.textContent = "+";
-        } else {
-            // Close all other accordions
-            document.querySelectorAll(".accordion-content").forEach(item => item.style.maxHeight = null);
-            document.querySelectorAll(".accordion-header span:last-child").forEach(icon => icon.textContent = "+");
+        // Close all accordions
+        document.querySelectorAll(".accordion-header").forEach(header => header.classList.remove("active"));
+        document.querySelectorAll(".accordion-content").forEach(item => item.style.maxHeight = null);
 
-            // Open the selected accordion
+        if (!isActive) {
+            // Open clicked accordion
+            this.classList.add("active");
             content.style.maxHeight = content.scrollHeight + "px";
-            icon.textContent = "−";
         }
     });
 });
