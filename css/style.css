@@ -8,7 +8,8 @@
   font-weight: 300;
   font-style: normal;
   font-display: swap;
-  src: url(../assets/fonts/446c481.woff2) format("woff2"),url(../assets/fonts/810905b.woff) format("woff")
+  src: url(../assets/fonts/446c481.woff2) format("woff2"),
+    url(../assets/fonts/810905b.woff) format("woff");
 }
 
 @font-face {
@@ -16,7 +17,8 @@
   font-weight: 700;
   font-style: normal;
   font-display: swap;
-  src: url(../assets/fonts/19ca471.woff2) format("woff2"),url(../assets/fonts/92d5638.woff) format("woff")
+  src: url(../assets/fonts/19ca471.woff2) format("woff2"),
+    url(../assets/fonts/92d5638.woff) format("woff");
 }
 
 @theme {
@@ -36,20 +38,17 @@
   --font-Montserrat: "Montserrat", sans-serif;
   --font-Playfair: "Playfair Display", serif;
   --font-Neruda: "FS Neruda";
-
 }
 
-
-
 body {
-  @apply overflow-x-hidden
+  @apply overflow-x-hidden;
 }
 /* Default Navbar Styles */
 /* .navbar {
   @apply text-[var(--color-secondary-500)] py-6 fixed top-0 left-0 w-full z-50 bg-gradient-to-b from-[var(--color-background)]/50 to-transparent transition-all duration-500;
 } */
 .navbar {
-  @apply text-[var(--color-secondary-500)] py-6 fixed top-0 left-0 w-full z-50  transition-all duration-500;
+  @apply font-Montserrat text-[var(--color-secondary-500)] py-7 fixed top-0 left-0 w-full z-50  transition-all duration-500;
 }
 
 /* Moves navbar out of view */
@@ -59,7 +58,7 @@ body {
 
 /* Navbar returns with solid background */
 .scrolled {
-  @apply translate-y-0 opacity-100 bg-[var(--color-background)] shadow-md py-1 flex justify-between items-center;
+  @apply translate-y-0 opacity-100 bg-[var(--color-background)] shadow-md py-1 flex justify-between items-center lg:block hidden;
 }
 
 /* Restore original gradient when scrolling to top */
@@ -121,9 +120,8 @@ body {
   @apply w-[45px] h-[45px] transition-all duration-300;
 }
 
-
 .hero-content-shadow {
-  box-shadow: -2.5em 3.125em 5.25em rgba(0,0,0,0.1);
+  box-shadow: -2.5em 3.125em 5.25em rgba(0, 0, 0, 0.1);
 }
 
 .expand-icon {
