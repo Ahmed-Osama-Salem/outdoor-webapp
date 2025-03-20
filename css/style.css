@@ -44,12 +44,11 @@ body {
   @apply overflow-x-hidden;
 }
 html {
-  @apply overflow-x-hidden
+  @apply overflow-x-hidden;
 }
-/* Default Navbar Styles */
-/* .navbar {
-  @apply text-[var(--color-secondary-500)] py-6 fixed top-0 left-0 w-full z-50 bg-gradient-to-b from-[var(--color-background)]/50 to-transparent transition-all duration-500;
-} */
+.app-container {
+  @apply container max-w-[1786px] mx-auto w-full;
+}
 .navbar {
   @apply font-Montserrat text-[var(--color-secondary-500)] py-7 fixed top-0 left-0 w-full z-50  transition-all duration-500;
 }
@@ -61,7 +60,7 @@ html {
 
 /* Navbar returns with solid background */
 .scrolled {
-  @apply translate-y-0 opacity-100 bg-[var(--color-background)] shadow-md py-1 flex justify-between items-center lg:block hidden;
+  @apply translate-y-0 opacity-100 bg-[var(--color-background)] shadow-sm py-1 2xl:h-[100px] xl:h-[70px] justify-between items-center lg:flex hidden;
 }
 
 /* Restore original gradient when scrolling to top */
@@ -71,7 +70,7 @@ html {
 
 /* Nav link hover animation */
 .nav-link {
-  @apply relative text-[18px] font-bold uppercase tracking-[2px]  transition-colors duration-300;
+  @apply relative 2xl:text-[18px] xl:text-[13px] font-bold uppercase tracking-[2px]  transition-colors duration-300;
 }
 
 .nav-link::after {
@@ -85,12 +84,12 @@ html {
 
 /* Collapsed link with dropdown */
 .collapsed-link {
-  @apply relative flex items-center gap-2 text-[18px] font-bold uppercase tracking-[2px]  cursor-pointer;
+  @apply relative flex items-center gap-2 2xl:text-[18px] xl:text-[13px] font-bold uppercase tracking-[2px]  cursor-pointer;
 }
 
 .collapsed-link::after {
   content: "▼"; /* Arrow icon */
-  @apply text-[14px] transition-transform duration-300;
+  @apply 2xl:text-[14px] xl:text-[10px] transition-transform duration-300;
 }
 
 .collapsed-link:hover::after {
@@ -120,7 +119,7 @@ html {
 }
 /* Shrink logo when scrolled */
 .small-logo {
-  @apply w-[45px] h-[45px] transition-all duration-300;
+  @apply 2xl:w-[45px] 2xl:h-[45px] xl:w-[35px] xl:h-[35px] transition-all duration-300;
 }
 
 .hero-content-shadow {

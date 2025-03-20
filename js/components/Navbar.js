@@ -14,14 +14,14 @@ class Navbar extends HTMLElement {
     const contactLink = this.getAttribute("contact") || "#";
 
     this.innerHTML = `
-      <nav class="navbar transition-all duration-500 px-20 lg:block hidden">
+      <nav class="navbar transition-all duration-500 2xl:px-20 xl:px-10 lg:block hidden">
         <div class="flex justify-between items-center p-4 max-w-[1920px] w-full mx-auto">
-          <a href="${homeLink}" class="text-xl font-bold flex items-center gap-4">
-            <img src="../../assets/images/outdoor_icon.png" alt="Menu" class="logo cursor-pointer transition-all duration-500" />
-            <span class="text-[18px] tracking-[4px] uppercase">OUTDOOR DREAMS</span>
+          <a href="${homeLink}" class=" font-bold flex items-center gap-4">
+            <img src="../../assets/images/outdoor_icon.png" alt="Menu" class="logo xl:w-[50px] cursor-pointer transition-all duration-500" />
+            <span class="2xl:text-[18px] xl:text-[13px] tracking-[4px] uppercase">OUTDOOR DREAMS</span>
              
           </a>
-          <ul class="flex gap-14">
+          <ul class="flex gap-14 items-center">
             <li class="relative group">
               <a class="collapsed-link">Services</a>
               <ul class="dropdown-menu">
@@ -35,7 +35,7 @@ class Navbar extends HTMLElement {
             <li><a href="${aboutLink}" class="nav-link">Project</a></li>
             <li><a href="${contactLink}" class="nav-link">Process</a></li>
             <li>
-              <a href="${contactLink}" class="text-[18px] font-bold uppercase tracking-[2px] start-btn transition-colors duration-200 text-white py-[11px] px-[20px]">Get Started</a>
+              <a href="${contactLink}" class="2xl:text-[18px] xl:text-[13px] font-bold uppercase tracking-[2px] start-btn transition-colors duration-200 text-white 2xl:py-[11px] 2xl:px-[20px] xl:py-[9px] xl:px-[15px]">Get Started</a>
             </li>
           </ul>
         </div>
