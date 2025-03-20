@@ -43,6 +43,9 @@
 body {
   @apply overflow-x-hidden;
 }
+html {
+  @apply overflow-x-hidden
+}
 /* Default Navbar Styles */
 /* .navbar {
   @apply text-[var(--color-secondary-500)] py-6 fixed top-0 left-0 w-full z-50 bg-gradient-to-b from-[var(--color-background)]/50 to-transparent transition-all duration-500;
