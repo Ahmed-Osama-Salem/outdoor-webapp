@@ -60,7 +60,7 @@ html {
 
 /* Navbar returns with solid background */
 .scrolled {
-  @apply translate-y-0 opacity-100 bg-[var(--color-background)] shadow-sm py-1 2xl:h-[100px] xl:h-[70px] justify-between items-center lg:flex hidden;
+  @apply translate-y-0 opacity-100 bg-[var(--color-background)] shadow-sm py-1 2xl:h-[100px] xl:h-[70px] h-[70px] justify-between items-center lg:flex hidden;
 }
 
 /* Restore original gradient when scrolling to top */
@@ -70,7 +70,7 @@ html {
 
 /* Nav link hover animation */
 .nav-link {
-  @apply relative 2xl:text-[18px] xl:text-[13px] font-bold uppercase tracking-[2px]  transition-colors duration-300;
+  @apply relative 2xl:text-[18px] xl:text-[14px] text-[13.6px] font-bold uppercase tracking-[2px]  transition-colors duration-300;
 }
 
 .nav-link::after {
@@ -84,7 +84,7 @@ html {
 
 /* Collapsed link with dropdown */
 .collapsed-link {
-  @apply relative flex items-center gap-2 2xl:text-[18px] xl:text-[13px] font-bold uppercase tracking-[2px]  cursor-pointer;
+  @apply relative flex items-center gap-2 2xl:text-[18px] xl:text-[14px] text-[13.6px] font-bold uppercase tracking-[2px]  cursor-pointer;
 }
 
 .collapsed-link::after {
@@ -119,7 +119,7 @@ html {
 }
 /* Shrink logo when scrolled */
 .small-logo {
-  @apply 2xl:w-[45px] 2xl:h-[45px] xl:w-[35px] xl:h-[35px] transition-all duration-300;
+  @apply 2xl:w-[45px] 2xl:h-[45px] xl:w-[35px] xl:h-[35px] w-[32px] h-[32px] transition-all duration-300;
 }
 
 .hero-content-shadow {
