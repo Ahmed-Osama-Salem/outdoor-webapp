@@ -3,10 +3,10 @@ class Hero extends HTMLElement {
     this.innerHTML = `
         <main class="bg-background w-full">
       <section
-        class="max-w-[1920px] relative mx-auto lg:h-[85vh] xl:h-[70vh] 2xl:h-[110vh] max-h-[1080px]bg-red-500"
+        class="max-w-[1920px] h-[100vh] md:h-[70vh] relative mx-auto lg:h-[85vh] xl:h-[70vh] 2xl:h-[110vh] max-h-[1080px]bg-red-500"
       >
         <!-- hero image -->
-        <div class="h-2/3 lg:h-full w-full absolute">
+        <div class="h-2/3 md:h-[80%] lg:h-full w-full absolute">
           <div
             class="w-full lg:w-[70%] xl:w-[75%] absolute top-0 right-0 h-full overflow-hidden"
           >
@@ -30,14 +30,14 @@ class Hero extends HTMLElement {
         <!-- hero content -->
         <div class="w-full relative h-full flex items-center">
           <div
-            class="w-[60%] lg:w-[50%] lg:h-[65%] lg:left-[40%]  xl:w-[35%] xl:h-[65%] left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 2xl:translate-x-0 2xl:w-[38em] absolute 2xl:h-[750px] xl:translate-x-0 xl:left-[10%] bg-white hero-content-shadow 2xl:left-56"
+            class="w-[60%] md:w-[48%] md:left-[30%] lg:w-[50%] lg:h-[65%] lg:left-[40%]  xl:w-[35%] xl:h-[65%] left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 2xl:translate-x-0 2xl:w-[38em] absolute 2xl:h-[750px] xl:translate-x-0 xl:left-[10%] bg-white hero-content-shadow 2xl:left-56  "
           >
             <div
-              class="p-7 lg:p-7 lg:pt-12 2xl:p-[4.625rem] lg:pb-[3.84375rem] lg:pl-[5.5rem] flex flex-col"
+              class="p-7 md:py-[40px] md:px-[60px] lg:p-7 lg:pt-12 2xl:p-[4.625rem] lg:pb-[3.84375rem] lg:pl-[5.5rem] flex flex-col"
             >
               <div class="flex flex-col">
                 <h1
-                  class="text-4xl lg:text-[82px] lg:leading-[0.9] lg:tracking-wider xl:text-[80px] xl:leading-16 2xl:text-[6.5em] font-Neruda 2xl:leading-24 mb-[0.6em] text-secondary-500 2xl:tracking-[6px]"
+                  class="text-4xl md:text-[60px] lg:text-[82px] md:leading-[0.9] lg:tracking-wider xl:text-[80px] xl:leading-16 2xl:text-[6.5em] font-Neruda 2xl:leading-24 mb-[0.6em] text-secondary-500 2xl:tracking-[6px]"
                 >
                   The best memories are made outdoors
                 </h1>
@@ -58,7 +58,7 @@ class Hero extends HTMLElement {
             </div>
           </div>
           <div
-            class="hidden lg:block bottom-[calc(100%_-_85%)] absolute lg:left-14 2xl:left-24"
+            class="hidden md:block md:right-10 bottom-[calc(100%_-_85%)] absolute lg:left-14 2xl:left-24"
           >
             <img src="./assets/images/home-hero-arrow.svg" alt="" />
           </div>
