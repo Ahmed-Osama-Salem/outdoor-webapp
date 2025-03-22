@@ -27,28 +27,31 @@ class PoolSlider extends HTMLElement {
             <div class="swiper-wrapper py-10">
               <!-- Slide 1 -->
               <div class="swiper-slide relative item-slide">
-                <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('../../../assets/images/what_we_do_slider_one.jpg');"></div>
+                <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('../../../assets/images/pool_slide_1.jpg');"></div>
               </div>
               <!-- Slide 2 -->
               <div class="swiper-slide relative item-slide">
-                <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('../../../assets/images/what_we_do_slider_two.jpg');"></div>
+                <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('../../../assets/images/pool_slide_2.jpg');background-size:contain;background-repeat: no-repeat;"></div>
               </div>
               <!-- Slide 3 -->
               <div class="swiper-slide relative item-slide">
-                <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('../../../assets/images/what_we_do_slider_three.jpg');"></div>
+                <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('../../../assets/images/pool_slide_3.jpg');"></div>
               </div>
               <!-- More Slides -->
               <div class="swiper-slide relative item-slide">
-                <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('../../../assets/images/what_we_do_slider_four.jpg');"></div>
+                <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('../../../assets/images/pool_slide_4.jpg');"></div>
               </div>
               <div class="swiper-slide relative item-slide">
-                <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('../../../assets/images/what_we_do_slider_five.jpg');"></div>
+                <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('../../../assets/images/pool_slide_5.jpg');"></div>
               </div>
               <div class="swiper-slide relative item-slide">
-                <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('../../../assets/images/what_we_do_slider_six.jpg');"></div>
+                <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('../../../assets/images/pool_slide_6.jpg');background-size:contain;background-repeat: no-repeat;"></div>
               </div>
               <div class="swiper-slide relative item-slide">
-                <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('../../../assets/images/what_we_do_slider_seven.jpg');"></div>
+                <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('../../../assets/images/pool_slide_7.jpg');background-size:contain;background-repeat: no-repeat;"></div>
+              </div>
+              <div class="swiper-slide relative item-slide">
+                <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('../../../assets/images/asd.jpg');"></div>
               </div>
             </div>
           </div>
