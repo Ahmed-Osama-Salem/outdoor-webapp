@@ -1245,9 +1245,19 @@
       height: 70vh;
     }
   }
+  .lg\:h-\[75vh\] {
+    @media (width >= 64rem) {
+      height: 75vh;
+    }
+  }
   .lg\:h-\[80\%\] {
     @media (width >= 64rem) {
       height: 80%;
+    }
+  }
+  .lg\:h-\[80vh\] {
+    @media (width >= 64rem) {
+      height: 80vh;
     }
   }
   .lg\:h-\[95vh\] {
@@ -1485,6 +1495,11 @@
   .xl\:h-\[60vh\] {
     @media (width >= 80rem) {
       height: 60vh;
+    }
+  }
+  .xl\:h-\[75vh\] {
+    @media (width >= 80rem) {
+      height: 75vh;
     }
   }
   .xl\:h-\[350px\] {

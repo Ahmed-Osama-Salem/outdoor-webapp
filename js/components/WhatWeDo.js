@@ -1,7 +1,7 @@
 class WhatWeDo extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
- <section class="bg-white  mt-12 ">
+ <section class="bg-white ">
    <div
       class="max-w-[1920px] w-full mx-auto  md:h-[90vh] lg:h-[70vh] 2xl:h-[100vh] 3xl:h-[50vh] lg:max-h-[1080px] flex items-center relative"
       >
