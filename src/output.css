@@ -395,9 +395,6 @@
   .h-\[70\%\] {
     height: 70%;
   }
-  .h-\[70vh\] {
-    height: 70vh;
-  }
   .h-\[80\%\] {
     height: 80%;
   }
@@ -1012,11 +1009,6 @@
       height: 80%;
     }
   }
-  .md\:h-\[80vh\] {
-    @media (width >= 48rem) {
-      height: 80vh;
-    }
-  }
   .md\:h-\[90vh\] {
     @media (width >= 48rem) {
       height: 90vh;
@@ -1259,11 +1251,6 @@
       height: 70vh;
     }
   }
-  .lg\:h-\[75vh\] {
-    @media (width >= 64rem) {
-      height: 75vh;
-    }
-  }
   .lg\:h-\[80\%\] {
     @media (width >= 64rem) {
       height: 80%;
@@ -1272,11 +1259,6 @@
   .lg\:h-\[80vh\] {
     @media (width >= 64rem) {
       height: 80vh;
-    }
-  }
-  .lg\:h-\[95vh\] {
-    @media (width >= 64rem) {
-      height: 95vh;
     }
   }
   .lg\:h-\[241px\] {
@@ -1509,11 +1491,6 @@
   .xl\:h-\[60vh\] {
     @media (width >= 80rem) {
       height: 60vh;
-    }
-  }
-  .xl\:h-\[75vh\] {
-    @media (width >= 80rem) {
-      height: 75vh;
     }
   }
   .xl\:h-\[80vh\] {
@@ -2192,7 +2169,7 @@ html {
     padding: 2.5em 3.75em;
   }
 }
-@media (min-width: 375px) and (max-width: 768px) {
+@media (min-width: 375px) and (max-width: 760px) {
   .card-content {
     padding: 32px;
   }
