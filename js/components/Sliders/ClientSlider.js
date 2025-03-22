@@ -3,6 +3,7 @@ class ClientSlider extends HTMLElement {
     this.innerHTML = `
         <section class="w-full relative bg-[var(--color-background)] h-auto flex flex-col 2xl:py-[130px] lg:py-[20px] py-[30px]">
             <div class="xl:ml-[300px] lg:ml-[200px] md:ml-[120px] ml-0 md:px-0 px-6 w-full xl:pt-[100px] lg:pt-[30px]">
+            <div class="flex flex-col 2xl:ml-[200px] ml-0">
                 <p class="uppercase text-[var(--green-main)] tracking-[2px] font-bold 2xl:text-[19px] xl:text-[14px] md:text-[14px]">
                     What former clients have to say
                 </p>
@@ -11,6 +12,7 @@ class ClientSlider extends HTMLElement {
                         We’ve had the privilege of helping some incredible people make their outdoor dream a reality.
                     </p>
                 </div>
+            </div>
                 <div class="w-[100%] xl:pt-[90px] lg:pt-[100px] 2xl:pt-[100px] relative">
                     <div class="swiper client-slider !overflow-visible h-full">
                         <div class="swiper-wrapper lg:py-10">
@@ -23,7 +25,6 @@ class ClientSlider extends HTMLElement {
                                      <div class="font-Montserrat tracking-[1.5px] ">
                                     <p class="font-bold 2xl:text-[20px] text-[14px] uppercase text-[var(--color-secondary-100)]">Tenaja L.</p>
                                      <p class="2xl:text-[15px] text-[11px] text-[var(--color-secondary-100)]">Chesterfield, VA</p>
-
                                     </div>
                                 </div>
                             </div>
@@ -78,7 +79,7 @@ class ClientSlider extends HTMLElement {
                     </div>
 
                     <!-- Custom Navigation Buttons -->
-                    <div class="absolute 2xl:top-[40px] xl:top-[10px] 2xl:left-[0px] xl:left-[10px] lg:left-[20px] lg:top-[0px] md:top-[0px] md:left-[10px] top-5 left-10 flex">
+                    <div class="absolute 2xl:top-[40px] xl:top-[10px] 2xl:left-[200px] xl:left-[10px] lg:left-[20px] lg:top-[0px] md:top-[0px] md:left-[10px] top-5 left-10 flex">
                         <!-- Previous Button -->
                         <div class="swiper-button-next !text-[var(--light-dark)] !translate-x-12 focus:!text-white rotate-180 focus:bg-[var(--color-blue-500)] !w-[80px] !h-[80px] rounded-full !scale-[0.4] flex items-center justify-center cursor-pointer transition">
                         </div>

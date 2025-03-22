@@ -369,6 +369,9 @@
   .ml-0 {
     margin-left: calc(var(--spacing) * 0);
   }
+  .ml-\[200px\] {
+    margin-left: 200px;
+  }
   .block {
     display: block;
   }
@@ -524,6 +527,18 @@
   }
   .max-w-\[280px\] {
     max-width: 280px;
+  }
+  .max-w-\[1000px\] {
+    max-width: 1000px;
+  }
+  .max-w-\[1200px\] {
+    max-width: 1200px;
+  }
+  .max-w-\[1400px\] {
+    max-width: 1400px;
+  }
+  .max-w-\[1500px\] {
+    max-width: 1500px;
   }
   .max-w-\[1786px\] {
     max-width: 1786px;
@@ -1067,6 +1082,10 @@
   .duration-500 {
     --tw-duration: 500ms;
     transition-duration: 500ms;
+  }
+  .ease-in-out {
+    --tw-ease: var(--ease-in-out);
+    transition-timing-function: var(--ease-in-out);
   }
   .before\:absolute {
     &::before {
@@ -2030,6 +2049,16 @@
       left: 0px;
     }
   }
+  .\32 xl\:left-\[100px\] {
+    @media (width >= 96rem) {
+      left: 100px;
+    }
+  }
+  .\32 xl\:left-\[200px\] {
+    @media (width >= 96rem) {
+      left: 200px;
+    }
+  }
   .\32 xl\:left-\[400px\] {
     @media (width >= 96rem) {
       left: 400px;
@@ -2038,6 +2067,11 @@
   .\32 xl\:mt-60 {
     @media (width >= 96rem) {
       margin-top: calc(var(--spacing) * 60);
+    }
+  }
+  .\32 xl\:ml-\[200px\] {
+    @media (width >= 96rem) {
+      margin-left: 200px;
     }
   }
   .\32 xl\:h-\[80\%\] {
@@ -2858,6 +2892,10 @@ html {
   syntax: "*";
   inherits: false;
 }
+@property --tw-ease {
+  syntax: "*";
+  inherits: false;
+}
 @property --tw-content {
   syntax: "*";
   initial-value: "";
@@ -2917,8 +2955,4 @@ html {
   syntax: "*";
   inherits: false;
   initial-value: 0 0 #0000;
-}
-@property --tw-ease {
-  syntax: "*";
-  inherits: false;
 }
