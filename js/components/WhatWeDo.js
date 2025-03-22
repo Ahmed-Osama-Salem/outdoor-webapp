@@ -1,9 +1,9 @@
 class WhatWeDo extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
- <section class="bg-white  mt-12 2xl:mt-5">
+ <section class="bg-white  mt-12 ">
    <div
-      class="max-w-[1920px] w-full mx-auto  md:h-[90vh] lg:h-[70vh] 2xl:h-[100vh] lg:max-h-[1080px] flex items-center relative"
+      class="max-w-[1920px] w-full mx-auto  md:h-[90vh] lg:h-[70vh] 2xl:h-[100vh] 3xl:h-[50vh] lg:max-h-[1080px] flex items-center relative"
       >
       <div
          class="mx-auto w-[90vw] flex flex-col-reverse lg:flex-row justify-between items-center"
