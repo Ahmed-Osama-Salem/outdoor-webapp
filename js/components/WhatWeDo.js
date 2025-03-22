@@ -3,14 +3,14 @@ class WhatWeDo extends HTMLElement {
     this.innerHTML = `
  <section class="bg-white ">
    <div
-      class="max-w-[1920px] w-full mx-auto  md:h-[90vh] lg:h-[70vh] 2xl:h-[100vh] 3xl:h-[50vh] lg:max-h-[1080px] flex items-center relative"
+      class="max-w-[1920px] w-full mx-auto  md:h-[90vh] lg:h-[70vh] 2xl:h-[100vh] 3xl:h-[50vh] lg:max-h-[1080px] flex pt-[115px] relative"
       >
       <div
-         class="mx-auto w-[90vw] flex flex-col-reverse lg:flex-row justify-between items-center"
+         class="mx-auto w-[90vw] flex flex-col-reverse lg:flex-row justify-between "
          >
          <!-- what we do projects -->
          <div
-            class="flex lg:w-[70%] w-full flex-col md:flex-row items-center justify-around gap-4"
+            class="flex lg:w-[70%] w-full flex-col md:flex-row  justify-around gap-4"
             >
             <div class="w-full">
                <img
