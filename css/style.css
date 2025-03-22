@@ -38,6 +38,7 @@
   --font-Montserrat: "Montserrat", sans-serif;
   --font-Playfair: "Playfair Display", serif;
   --font-Neruda: "FS Neruda";
+  --breakpoint-3xl: 160rem; 
 }
 
 body {
@@ -173,4 +174,69 @@ html {
   overflow: hidden;
   max-height: 0;
   transition: max-height 0.3s ease-in-out;
+}
+
+
+
+@keyframes imageSlideUp {
+  from {
+    transform: translateY(10%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.image-animation {
+  animation: imageSlideUp 2s ease-in-out;
+}
+
+
+
+.card-content {
+  padding: 3.625em 3.625em 2.84375em 5.5em; /* Default (lg and above) */
+}
+
+@media (min-width: 768px) and (max-width: 1023px) { /* Tailwind's md breakpoint */
+  .card-content {
+    padding: 2.5em 3.75em;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 768px) { /* Fixed min-width */
+  .card-content {
+    padding: 32px;
+  }
+}
+
+
+.decorator-line {
+  display: block !important;
+  width: 33vw;
+  height: 2px; /* Line thickness */
+  position: absolute;
+  background-color: #5a90f1; /* Blue color */
+  z-index: 2;
+  pointer-events: none;
+  transform: rotate(143deg);
+}
+
+/* Ensure it's visible */
+.decorator-line[data-animate="true"]:before {
+  content: "";
+  position: absolute;
+  /* top: 10; */
+  /* left: 0; */
+  /* right: 0; */
+  /* bottom: 0; */
+  background-color: inherit;
+  transform: scaleX(1) !important;
+  transition: transform 1.25s cubic-bezier(.215, .61, .355, 1) .2s;
+}
+
+/* Fix position inside the container */
+ .decorator-line {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(143deg);
 }

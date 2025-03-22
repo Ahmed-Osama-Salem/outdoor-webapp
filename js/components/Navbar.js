@@ -14,12 +14,11 @@ class Navbar extends HTMLElement {
     const contactLink = this.getAttribute("contact") || "#";
 
     this.innerHTML = `
-      <nav class="navbar transition-all duration-500 2xl:px-20 px-8 lg:block hidden">
+      <nav class="navbar transition-all duration-500 2xl:px-20 px-8 lg:block hidden fixed top-0 left-0 w-full z-50">
         <div class="flex justify-between items-center p-4 max-w-[1920px] w-full mx-auto">
           <a href="${homeLink}" class=" font-bold flex items-center gap-3">
             <img src="../../assets/images/outdoor_icon.png" alt="Menu" class="logo xl:w-[50px] w-[45px] cursor-pointer transition-all duration-500" />
             <span class="2xl:text-[18px] xl:text-[14px] text-[13.6px] tracking-[4px] uppercase">OUTDOOR DREAMS</span>
-             
           </a>
           <ul class="flex gap-14 items-center">
             <li class="relative group">
@@ -51,6 +50,18 @@ class Navbar extends HTMLElement {
 
   handleScroll() {
     const currentScrollY = window.scrollY;
+    const sectionBelow = this.getSectionBelowNavbar();
+
+    if (sectionBelow) {
+      const computedStyle = window.getComputedStyle(sectionBelow);
+      const bgColor = computedStyle.backgroundColor;
+
+      if (bgColor && bgColor !== "rgba(0, 0, 0, 0)" && bgColor !== "transparent") {
+        this.navbar.style.backgroundColor = bgColor;
+      } else {
+        this.navbar.style.backgroundColor = ""; // Keep default color
+      }
+    }
 
     if (currentScrollY > this.lastScrollY) {
       // Scrolling Down
@@ -77,6 +88,17 @@ class Navbar extends HTMLElement {
     }
 
     this.lastScrollY = currentScrollY;
+  }
+
+  getSectionBelowNavbar() {
+    const sections = document.querySelectorAll("section");
+    for (const section of sections) {
+      const rect = section.getBoundingClientRect();
+      if (rect.top <= 60 && rect.bottom >= 60) {
+        return section;
+      }
+    }
+    return null;
   }
 }
 

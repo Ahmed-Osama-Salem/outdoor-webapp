@@ -25,13 +25,73 @@
     >
     </navbar-mobile>
     <!-- hero section -->
-    <hero-section> </hero-section>
+    <!-- <hero-section> </hero-section> -->
+    <main class="bg-background w-full">
+      <section
+        class="max-w-[1920px] min-h-[500px] h-[80vh] lg:h-[95vh] 2xl:h-[120vh] 3xl:h-[80vh] max-h-[1080px] relative mx-auto"
+      >
+        <!-- Hero Image -->
+        <div class="absolute inset-0 w-full h-full">
+          <div
+            class="w-full lg:w-[70%] xl:w-[75%] h-[70%] md:h-[80%] lg:h-full absolute top-0 right-0 overflow-hidden"
+          >
+            <div
+              class="absolute z-[2] w-full h-1/4 top-0 left-0 bg-gradient-to-b from-[rgba(252,249,247,0.7)] to-[rgba(252,249,247,0)] mix-blend-lighten"
+            ></div>
+            <img
+              src="./assets/images/hero_section.jpg"
+              alt="Pool and Hot Tub with stone patio and stone wall"
+              class="w-full h-full object-cover aspect-auto"
+              loading="eager"
+            />
+          </div>
+        </div>
+
+        <!-- Hero Content -->
+        <div class="w-full h-full flex items-end">
+          <div
+            class="relative  flex items-center justify-center h-[90%] 2xl:h-full  w-full  md:w-2/3 xl:w-1/2 px-4 md:px-10"
+          >
+            <div
+              class="relative bg-white   hero-content-shadow  max-w-[280px] md:max-w-sm lg:max-w-lg xl:max-w-lg 2xl:max-w-xl 3xl:max-w-xl w-full"
+            >
+              <div class="bg-white  card-content w-full">
+                <h1
+                  class="text-[44px] mb-5 lg:mb-14 md:text-6xl font-Neruda leading-[0.8] lg:text-[82px] 2xl:text-[6.8rem] text-secondary-500 tracking-wide"
+                >
+                  The best memories are made outdoors
+                </h1>
+                <button
+                  class="bg-primary-500 mb-3 px-6 py-2 md:px-8 md:py-3 lg:px-12 lg:py-3.5 text-white text-lg font-Montserrat"
+                >
+                  Get Started
+                </button>
+                <span
+                  class="text-base lg:text-xl font-Montserrat text-secondary-100 font-medium block mt-2"
+                >
+                  Established in 2005
+                </span>
+              </div>
+              <!-- Hero Brand Logo -->
+              <div class="bg-background py-5 px-7">
+                <img src="assets/images/hero-brand.png" alt="Brand Logo" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="hidden md:block absolute lg:left-8 2xl:left-16 3xl:left-11 bottom-[17%]"
+        >
+          <img src="./assets/images/home-hero-arrow.svg" alt="Arrow" />
+        </div>
+      </section>
+    </main>
+
     <what-we-do-section></what-we-do-section>
     <project-section></project-section>
     <get-started-section></get-started-section>
     <planning-section></planning-section>
-    
-  
+
     <main-footer> </main-footer>
     <script src="./js/main.js"></script>
     <script src="./js/components/Navbar.js"></script>
