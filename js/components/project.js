@@ -3,7 +3,7 @@ class Projecs extends HTMLElement {
     this.innerHTML = `
  <section
       id="what_we_do"
-      class="bg-brown-500 h-fit md:h-screen  max-h-[1080px] max-w-[1920px] mx-auto"
+      class="bg-brown-500 h-fit   h-auto max-w-[1920px] mx-auto"
     >
       <div
         class="lg:w-full py-20 lg:py-36 flex flex-col md:flex-row items-start justify-end"
@@ -98,7 +98,10 @@ class Projecs extends HTMLElement {
             class="md:w-[350px] md:h-[300px] lg:h-[315px] lg:w-[380px] xl:w-[525px] xl:h-[454px] object-cover 2xl:w-full 2xl:h-full"
           />
         </div>
-      </div>
+        </div>
+        <div class="relative md:w-[65%] w-full pt-[60px] md:px-0 px-5">
+          <what-we-do-slider></what-we-do-slider>
+        </div>
     </section>
 
 

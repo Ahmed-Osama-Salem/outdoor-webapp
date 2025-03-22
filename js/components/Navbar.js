@@ -56,7 +56,11 @@ class Navbar extends HTMLElement {
       const computedStyle = window.getComputedStyle(sectionBelow);
       const bgColor = computedStyle.backgroundColor;
 
-      if (bgColor && bgColor !== "rgba(0, 0, 0, 0)" && bgColor !== "transparent") {
+      if (
+        bgColor &&
+        bgColor !== "rgba(0, 0, 0, 0)" &&
+        bgColor !== "transparent"
+      ) {
         this.navbar.style.backgroundColor = bgColor;
       } else {
         this.navbar.style.backgroundColor = ""; // Keep default color
