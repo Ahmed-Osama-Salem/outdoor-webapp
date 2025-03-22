@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
       rel="stylesheet"
@@ -45,6 +46,10 @@
               class="absolute z-[2] w-full h-1/4 top-0 left-0 bg-gradient-to-b from-[rgba(252,249,247,0.7)] to-[rgba(252,249,247,0)] mix-blend-lighten"
             ></div>
             <img
+              data-aos="fade-up-right"
+              data-aos-delay="85"
+              data-aos-duration="600"
+              data-aos-easing="ease-in-out"
               src="./assets/images/hero_section.jpg"
               alt="Pool and Hot Tub with stone patio and stone wall"
               class="w-full h-full object-cover aspect-auto"
@@ -54,7 +59,13 @@
         </div>
 
         <!-- Hero Content -->
-        <div class="w-full h-full flex items-end">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="85"
+          data-aos-duration="600"
+          data-aos-easing="ease-in-out"
+          class="w-full h-full flex items-end"
+        >
           <div
             class="relative flex items-center justify-center h-[90%] 2xl:h-full w-full md:w-2/3 xl:w-1/2 px-4 md:px-10"
           >
@@ -101,6 +112,16 @@
     <planning-section></planning-section>
 
     <main-footer> </main-footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        AOS.init({
+          once: true, // Ensures the animation runs only once on page load
+          duration: 1000, // Animation duration (1s)
+          easing: "ease-in-out",
+        });
+      });
+    </script>
 
     <script src="./js/main.js"></script>
     <script src="./js/components/Navbar.js"></script>
