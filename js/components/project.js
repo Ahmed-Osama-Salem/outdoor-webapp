@@ -9,6 +9,10 @@ class Projecs extends HTMLElement {
         class="lg:w-full py-20 lg:py-36 flex flex-col md:flex-row items-start justify-end"
       >
         <div class="w-[90%] mx-auto md:w-[40%] lg:w-1/2">
+        <div data-aos="fade-up"
+          data-aos-delay="85"
+          data-aos-duration="600"
+          data-aos-easing="ease-in-out">
           <h3
             class="text-primary-500 font-Montserrat font-semibold text-sm lg:text-base 2xl:text-xl tracking-widest uppercase"
           >
@@ -20,9 +24,12 @@ class Projecs extends HTMLElement {
             What sets our <br />
             projects apart
           </h1>
-
+</div>
           <!-- Accordion  -->
-          <div class="text-white lg:w-[80%] mt-8 space-y-8">
+          <div data-aos="fade-up"
+          data-aos-delay="85"
+          data-aos-duration="700"
+          data-aos-easing="ease-in-out" class="text-white lg:w-[80%] mt-8 space-y-8">
             <div class="border-b border-[#2b2624]">
               <button
                 class="w-full text-left py-4 flex justify-between items-center focus:outline-none accordion-header"
@@ -32,7 +39,7 @@ class Projecs extends HTMLElement {
                   >Comprehensive Service</span
                 >
                 <!-- <span class="text-xl transition-transform transform">+</span> -->
-                <span class="expand-icon" data-v-16a93c5a=""></span>
+                <span class="expand-icon"></span>
               </button>
               <div
                 class="accordion-content text-base lg:text-xl pb-0 max-h-0 overflow-hidden transition-all duration-300"
@@ -54,7 +61,7 @@ class Projecs extends HTMLElement {
                   >Comprehensive Service</span
                 >
                 <!-- <span class="text-xl transition-transform transform">+</span> -->
-                <span class="expand-icon" data-v-16a93c5a=""></span>
+                <span class="expand-icon" ></span>
               </button>
               <div
                 class="accordion-content text-base lg:text-xl pb-0 max-h-0 overflow-hidden transition-all duration-300"
@@ -76,7 +83,7 @@ class Projecs extends HTMLElement {
                   >Comprehensive Service</span
                 >
                 <!-- <span class="text-xl transition-transform transform">+</span> -->
-                <span class="expand-icon" data-v-16a93c5a=""></span>
+                <span class="expand-icon" ></span>
               </button>
               <div
                 class="accordion-content text-base lg:text-xl pb-0 max-h-0 overflow-hidden transition-all duration-300"
@@ -91,8 +98,12 @@ class Projecs extends HTMLElement {
             </div>
           </div>
         </div>
-        <div class="mt-12 hidden md:block bg-black lg:mt-0">
+        <div  data-aos="fade-left"
+          data-aos-delay="85"
+          data-aos-duration="600"
+          data-aos-easing="ease-in-out" class="mt-12 hidden md:block bg-black lg:mt-0">
           <img
+          
             src="./assets/images/projects-side.jpg"
             alt="Outdoor Space"
             class="md:w-[350px] md:h-[300px] lg:h-[315px] lg:w-[380px] xl:w-[525px] xl:h-[454px] object-cover 2xl:w-full 2xl:h-full"

@@ -1,7 +1,10 @@
 class PoolSlider extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
-      <section class="w-full relative bg-[var(--color-background)] h-screen flex flex-col  py-[130px]">
+      <section   data-aos="fade-up"
+              data-aos-delay="85"
+              data-aos-duration="600"
+              data-aos-easing="ease-in-out" class="w-full relative bg-[var(--color-background)] h-screen flex flex-col  py-[130px]">
         <div class="app-container flex md:flex-row flex-col justify-between xl:gap-[120px] lg:gap-[40px] md:gap-[50px] gap-5 2xl:px-0 xl:px-12 md:px-12 px-6">
           <div class="flex xl:w-[60%] lg:w-[70%] md:w-[80%]">
             <p class="text-[var(--light-dark)] lg:leading-[80px] md:leading-[60px] xl:leading-[100px] leading-[40px] font-Neruda font-light 2xl:text-[110px] xl:text-[88px] lg:text-[82px] md:text-[60px] text-[44px] font-bold md:mb-10 mb-4">
