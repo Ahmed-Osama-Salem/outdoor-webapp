@@ -14,6 +14,11 @@ class WhatWeDo extends HTMLElement {
             >
             <div class="w-full">
                <img
+                  data-aos="fade-up"
+                  data-aos-delay="85"
+                  data-aos-duration="500"
+                  data-aos-easing="ease-in-out"
+
                   src="./assets/images/what-we-do-1.jpg"
                   alt="Patio"
                   class="w-full md:w-[320px] md:h-[420px] lg:w-[190px] lg:h-[241px] xl:w-[250px] xl:h-[350px] 2xl:w-[350px] 2xl:h-[460px]"
@@ -24,6 +29,11 @@ class WhatWeDo extends HTMLElement {
             </div>
             <div class="w-full">
                <img
+                  data-aos="fade-up"
+                  data-aos-delay="95"
+                  data-aos-duration="500"
+                  data-aos-easing="ease-in-out"
+
                   src="./assets/images/what-we-do-2.jpg"
                   alt="Pool"
                   class="w-full md:w-[320px] md:h-[420px] lg:w-[190px] lg:h-[241px] xl:w-[250px] xl:h-[350px] 2xl:w-[350px] 2xl:h-[460px]"
@@ -36,7 +46,10 @@ class WhatWeDo extends HTMLElement {
          <div class="w-[10%] h-[4rem]"></div>
          <!-- what we do content -->
          <div class=" lg:w-2/3">
-            <div class="flex flex-col  items-start gap-3 md:gap-8 w-[90%] justify-between">
+            <div   data-aos="fade-up"
+                  data-aos-delay="100"
+                  data-aos-duration="500"
+                  data-aos-easing="ease-in-out" class="flex flex-col  items-start gap-3 md:gap-8 w-[90%] justify-between">
                <h3
                   class="text-primary-500 font-Montserrat font-bold uppercase text-base tracking-widest"
                   >
@@ -62,6 +75,10 @@ class WhatWeDo extends HTMLElement {
    >
    <div class="2xl:h-[80%] w-full md:w-[90%] lg:w-[85%]">
       <img
+         data-aos="zoom-in"
+                  data-aos-delay="95"
+                  data-aos-duration="500"
+                  data-aos-easing="ease-in-out"
          src="./assets/images/what-we-do-banner.jpg"
          class="w-full h-full object-cover"
          alt=""

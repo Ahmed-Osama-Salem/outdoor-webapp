@@ -81,7 +81,7 @@ class Navbar extends HTMLElement {
       if (this.isScrollingDown && currentScrollY < 100) {
         this.isScrollingDown = false;
         this.navbar.classList.remove("scrolled");
-        this.navbar.classList.add("original");
+        // this.navbar.classList.add("original");
         this.logo.classList.remove("small-logo");
         this.startBtn.classList.remove("start-btn-scrolled");
       }
