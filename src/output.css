@@ -385,6 +385,12 @@
   .mb-\[20px\] {
     margin-bottom: 20px;
   }
+  .mb-\[30px\] {
+    margin-bottom: 30px;
+  }
+  .mb-\[50px\] {
+    margin-bottom: 50px;
+  }
   .ml-0 {
     margin-left: calc(var(--spacing) * 0);
   }
@@ -841,9 +847,6 @@
   }
   .py-\[90px\] {
     padding-block: 90px;
-  }
-  .py-\[130px\] {
-    padding-block: 130px;
   }
   .pt-1 {
     padding-top: calc(var(--spacing) * 1);
