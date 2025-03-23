@@ -258,9 +258,6 @@
   .bottom-8 {
     bottom: calc(var(--spacing) * 8);
   }
-  .bottom-\[17\%\] {
-    bottom: 17%;
-  }
   .bottom-\[calc\(100\%_-_97\%\)\] {
     bottom: calc(100% - 97%);
   }
@@ -368,9 +365,6 @@
   }
   .ml-0 {
     margin-left: calc(var(--spacing) * 0);
-  }
-  .ml-\[200px\] {
-    margin-left: 200px;
   }
   .block {
     display: block;
@@ -527,18 +521,6 @@
   }
   .max-w-\[280px\] {
     max-width: 280px;
-  }
-  .max-w-\[1000px\] {
-    max-width: 1000px;
-  }
-  .max-w-\[1200px\] {
-    max-width: 1200px;
-  }
-  .max-w-\[1400px\] {
-    max-width: 1400px;
-  }
-  .max-w-\[1500px\] {
-    max-width: 1500px;
   }
   .max-w-\[1786px\] {
     max-width: 1786px;
@@ -817,6 +799,9 @@
   .py-\[90px\] {
     padding-block: 90px;
   }
+  .py-\[130px\] {
+    padding-block: 130px;
+  }
   .pt-1 {
     padding-top: calc(var(--spacing) * 1);
   }
@@ -834,6 +819,9 @@
   }
   .pb-0 {
     padding-bottom: calc(var(--spacing) * 0);
+  }
+  .pb-8 {
+    padding-bottom: calc(var(--spacing) * 8);
   }
   .pb-\[2\.84375rem\] {
     padding-bottom: 2.84375rem;
@@ -1173,9 +1161,19 @@
       top: 0px;
     }
   }
+  .md\:right-4 {
+    @media (width >= 48rem) {
+      right: calc(var(--spacing) * 4);
+    }
+  }
   .md\:right-\[60px\] {
     @media (width >= 48rem) {
       right: 60px;
+    }
+  }
+  .md\:bottom-\[12\%\] {
+    @media (width >= 48rem) {
+      bottom: 12%;
     }
   }
   .md\:left-\[10px\] {
@@ -1186,6 +1184,11 @@
   .md\:left-\[60px\] {
     @media (width >= 48rem) {
       left: 60px;
+    }
+  }
+  .md\:mx-auto {
+    @media (width >= 48rem) {
+      margin-inline: auto;
     }
   }
   .md\:mt-7 {
@@ -1263,19 +1266,24 @@
       width: calc(1/2 * 100%);
     }
   }
-  .md\:w-2\/3 {
-    @media (width >= 48rem) {
-      width: calc(2/3 * 100%);
-    }
-  }
   .md\:w-\[40\%\] {
     @media (width >= 48rem) {
       width: 40%;
     }
   }
+  .md\:w-\[60\%\] {
+    @media (width >= 48rem) {
+      width: 60%;
+    }
+  }
   .md\:w-\[65\%\] {
     @media (width >= 48rem) {
       width: 65%;
+    }
+  }
+  .md\:w-\[70\%\] {
+    @media (width >= 48rem) {
+      width: 70%;
     }
   }
   .md\:w-\[80\%\] {
@@ -1368,9 +1376,19 @@
       border-right-color: #eae6e6;
     }
   }
+  .md\:p-0 {
+    @media (width >= 48rem) {
+      padding: calc(var(--spacing) * 0);
+    }
+  }
   .md\:px-0 {
     @media (width >= 48rem) {
       padding-inline: calc(var(--spacing) * 0);
+    }
+  }
+  .md\:px-6 {
+    @media (width >= 48rem) {
+      padding-inline: calc(var(--spacing) * 6);
     }
   }
   .md\:px-8 {
@@ -1401,6 +1419,11 @@
   .md\:px-\[120px\] {
     @media (width >= 48rem) {
       padding-inline: 120px;
+    }
+  }
+  .md\:py-2 {
+    @media (width >= 48rem) {
+      padding-block: calc(var(--spacing) * 2);
     }
   }
   .md\:py-3 {
@@ -1435,6 +1458,11 @@
       line-height: var(--tw-leading, var(--text-6xl--line-height));
     }
   }
+  .md\:text-\[2\.25em\] {
+    @media (width >= 48rem) {
+      font-size: 2.25em;
+    }
+  }
   .md\:text-\[11\.5px\] {
     @media (width >= 48rem) {
       font-size: 11.5px;
@@ -1465,15 +1493,32 @@
       font-size: 60px;
     }
   }
+  .md\:leading-\[1\.166666667\] {
+    @media (width >= 48rem) {
+      --tw-leading: 1.166666667;
+      line-height: 1.166666667;
+    }
+  }
   .md\:leading-\[60px\] {
     @media (width >= 48rem) {
       --tw-leading: 60px;
       line-height: 60px;
     }
   }
+  .md\:tracking-\[\.020833333em\] {
+    @media (width >= 48rem) {
+      --tw-tracking: .020833333em;
+      letter-spacing: .020833333em;
+    }
+  }
   .lg\:top-\[0px\] {
     @media (width >= 64rem) {
       top: 0px;
+    }
+  }
+  .lg\:bottom-\[7\%\] {
+    @media (width >= 64rem) {
+      bottom: 7%;
     }
   }
   .lg\:left-8 {
@@ -1574,6 +1619,11 @@
   .lg\:max-h-\[1080px\] {
     @media (width >= 64rem) {
       max-height: 1080px;
+    }
+  }
+  .lg\:min-h-\[800px\] {
+    @media (width >= 64rem) {
+      min-height: 800px;
     }
   }
   .lg\:w-1\/2 {
@@ -1864,11 +1914,6 @@
       height: calc(100vh - 70px);
     }
   }
-  .xl\:w-1\/2 {
-    @media (width >= 80rem) {
-      width: calc(1/2 * 100%);
-    }
-  }
   .xl\:w-\[35\%\] {
     @media (width >= 80rem) {
       width: 35%;
@@ -1882,6 +1927,11 @@
   .xl\:w-\[60\%\] {
     @media (width >= 80rem) {
       width: 60%;
+    }
+  }
+  .xl\:w-\[70\%\] {
+    @media (width >= 80rem) {
+      width: 70%;
     }
   }
   .xl\:w-\[75\%\] {
@@ -1967,6 +2017,11 @@
       padding-inline: 170px;
     }
   }
+  .xl\:py-3\.5 {
+    @media (width >= 80rem) {
+      padding-block: calc(var(--spacing) * 3.5);
+    }
+  }
   .xl\:py-\[9px\] {
     @media (width >= 80rem) {
       padding-block: 9px;
@@ -1996,6 +2051,12 @@
     @media (width >= 80rem) {
       font-size: var(--text-7xl);
       line-height: var(--tw-leading, var(--text-7xl--line-height));
+    }
+  }
+  .xl\:text-xl {
+    @media (width >= 80rem) {
+      font-size: var(--text-xl);
+      line-height: var(--tw-leading, var(--text-xl--line-height));
     }
   }
   .xl\:text-\[12px\] {
@@ -2042,16 +2103,6 @@
   .\32 xl\:left-24 {
     @media (width >= 96rem) {
       left: calc(var(--spacing) * 24);
-    }
-  }
-  .\32 xl\:left-\[0px\] {
-    @media (width >= 96rem) {
-      left: 0px;
-    }
-  }
-  .\32 xl\:left-\[100px\] {
-    @media (width >= 96rem) {
-      left: 100px;
     }
   }
   .\32 xl\:left-\[200px\] {
@@ -2318,6 +2369,11 @@
   .\33 xl\:h-\[90vh\] {
     @media (width >= 160rem) {
       height: 90vh;
+    }
+  }
+  .\33 xl\:min-h-\[1000px\] {
+    @media (width >= 160rem) {
+      min-height: 1000px;
     }
   }
   .\33 xl\:max-w-2xl {
@@ -2700,39 +2756,16 @@ html {
     height: 850px !important;
   }
 }
-.client-slide {
-  display: flex !important;
-  height: 550px !important;
-  width: 300px !important;
-  flex-direction: column !important;
-  justify-content: center !important;
-  gap: calc(var(--spacing) * 8);
-  @media (width >= 48rem) {
-    height: 500px !important;
+@keyframes kenBurns {
+  0% {
+    transform: scale(1) translateX(10%) translateY(-10%);
   }
-  @media (width >= 48rem) {
-    width: 350px !important;
-  }
-  @media (width >= 64rem) {
-    height: 300px !important;
-  }
-  @media (width >= 80rem) {
-    height: 300px !important;
-  }
-  @media (width >= 96rem) {
-    height: 700px !important;
+  100% {
+    transform: scale(1.2) translateX(0) translateY(0);
   }
 }
-@keyframes imageSlideUp {
-  from {
-    transform: translateY(10%);
-  }
-  to {
-    transform: translateY(0);
-  }
-}
-.image-animation {
-  animation: imageSlideUp 2s ease-in-out;
+.ken-burns {
+  animation: kenBurns 10s ease-in-out forwards;
 }
 .card-content {
   padding: 3.625em 3.625em 2.84375em 5.5em;
