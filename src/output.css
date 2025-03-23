@@ -6,6 +6,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-red-500: oklch(0.637 0.237 25.331);
     --color-green-600: oklch(0.627 0.194 149.214);
     --color-blue-500: #5a90f1;
     --color-gray-100: oklch(0.967 0.003 264.542);
@@ -317,6 +318,9 @@
   }
   .my-5 {
     margin-block: calc(var(--spacing) * 5);
+  }
+  .my-\[48px\] {
+    margin-block: 48px;
   }
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
@@ -684,6 +688,9 @@
   }
   .bg-primary-500 {
     background-color: var(--color-primary-500);
+  }
+  .bg-red-500 {
+    background-color: var(--color-red-500);
   }
   .bg-white {
     background-color: var(--color-white);
@@ -1156,6 +1163,11 @@
       outline-style: none;
     }
   }
+  .sm\:my-\[48px\] {
+    @media (width >= 40rem) {
+      margin-block: 48px;
+    }
+  }
   .md\:top-\[0px\] {
     @media (width >= 48rem) {
       top: 0px;
@@ -1189,6 +1201,11 @@
   .md\:mx-auto {
     @media (width >= 48rem) {
       margin-inline: auto;
+    }
+  }
+  .md\:my-\[96px\] {
+    @media (width >= 48rem) {
+      margin-block: 96px;
     }
   }
   .md\:mt-7 {
@@ -1259,6 +1276,11 @@
   .md\:h-fit {
     @media (width >= 48rem) {
       height: fit-content;
+    }
+  }
+  .md\:min-h-\[80\%\] {
+    @media (width >= 48rem) {
+      min-height: 80%;
     }
   }
   .md\:w-1\/2 {
@@ -1561,9 +1583,24 @@
       margin-top: calc(var(--spacing) * 30);
     }
   }
+  .lg\:mt-\[116px\] {
+    @media (width >= 64rem) {
+      margin-top: 116px;
+    }
+  }
   .lg\:mb-14 {
     @media (width >= 64rem) {
       margin-bottom: calc(var(--spacing) * 14);
+    }
+  }
+  .lg\:mb-\[169\] {
+    @media (width >= 64rem) {
+      margin-bottom: 169;
+    }
+  }
+  .lg\:mb-\[169px\] {
+    @media (width >= 64rem) {
+      margin-bottom: 169px;
     }
   }
   .lg\:ml-\[200px\] {

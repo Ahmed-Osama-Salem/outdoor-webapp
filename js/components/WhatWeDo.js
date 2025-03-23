@@ -1,9 +1,9 @@
 class WhatWeDo extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
- <section class="bg-white ">
+ <section class="bg-white my-[48px] md:my-[96px] lg:mt-[116px] lg:mb-[169px] ">
    <div
-      class="max-w-[1920px] w-full mx-auto  md:h-[90vh] lg:h-[70vh] 2xl:h-[100vh] 3xl:h-[50vh] lg:max-h-[1080px] flex pt-[115px] relative"
+      class="max-w-[1920px]   w-full mx-auto   flex  relative"
       >
       <div
          class="mx-auto w-[90vw] flex flex-col-reverse lg:flex-row justify-between "
@@ -71,16 +71,16 @@ class WhatWeDo extends HTMLElement {
 </section>
 <!-- what we con do image -->
 <section
-   class="2xl:h-screen md:h-fit h-[30vh] lg:mt-0 w-screen  xl:h-[60vh] 2xl:max-h-[1080px] max-w-[1920px] mx-auto flex items-end"
+   class="2xl:h-screen  md:h-fit h-[30vh] lg:mt-0 w-screen  xl:h-[60vh] 2xl:max-h-[1080px] max-w-[1920px] mx-auto flex items-end "
    >
-   <div class="2xl:h-[80%] w-full md:w-[90%] lg:w-[85%]">
+   <div class="2xl:h-[80%] w-full  h-full md:w-[90%] lg:w-[85%]">
       <img
          data-aos="zoom-in"
                   data-aos-delay="95"
                   data-aos-duration="500"
                   data-aos-easing="ease-in-out"
          src="./assets/images/what-we-do-banner.jpg"
-         class="w-full h-full object-cover"
+         class="w-full h-full  object-cover"
          alt=""
          />
    </div>
