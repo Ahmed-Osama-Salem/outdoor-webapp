@@ -41,6 +41,7 @@
     --text-7xl--line-height: 1;
     --text-8xl: 6rem;
     --text-8xl--line-height: 1;
+    --font-weight-extralight: 200;
     --font-weight-light: 300;
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
@@ -234,6 +235,9 @@
   .inset-0 {
     inset: calc(var(--spacing) * 0);
   }
+  .-top-12 {
+    top: calc(var(--spacing) * -12);
+  }
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
@@ -351,6 +355,9 @@
   .mt-60 {
     margin-top: calc(var(--spacing) * 60);
   }
+  .mt-\[42px\] {
+    margin-top: 42px;
+  }
   .mb-1 {
     margin-bottom: calc(var(--spacing) * 1);
   }
@@ -375,8 +382,17 @@
   .mb-\[14px\] {
     margin-bottom: 14px;
   }
+  .mb-\[20px\] {
+    margin-bottom: 20px;
+  }
   .ml-0 {
     margin-left: calc(var(--spacing) * 0);
+  }
+  .ml-\[4\%\] {
+    margin-left: 4%;
+  }
+  .ml-\[8\%\] {
+    margin-left: 8%;
   }
   .block {
     display: block;
@@ -691,6 +707,9 @@
   .border-b-\[\#eae6e6\] {
     border-bottom-color: #eae6e6;
   }
+  .\!bg-black {
+    background-color: var(--color-black) !important;
+  }
   .bg-\[var\(--color-background\)\] {
     background-color: var(--color-background);
   }
@@ -967,6 +986,10 @@
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
+  }
+  .font-extralight {
+    --tw-font-weight: var(--font-weight-extralight);
+    font-weight: var(--font-weight-extralight);
   }
   .font-light {
     --tw-font-weight: var(--font-weight-light);
@@ -1309,6 +1332,11 @@
       width: 40%;
     }
   }
+  .md\:w-\[44\%\] {
+    @media (width >= 48rem) {
+      width: 44%;
+    }
+  }
   .md\:w-\[60\%\] {
     @media (width >= 48rem) {
       width: 60%;
@@ -1617,6 +1645,11 @@
   .lg\:mb-\[169px\] {
     @media (width >= 64rem) {
       margin-bottom: 169px;
+    }
+  }
+  .lg\:ml-\[8\%\] {
+    @media (width >= 64rem) {
+      margin-left: 8%;
     }
   }
   .lg\:ml-\[200px\] {
@@ -2385,12 +2418,6 @@
     @media (width >= 96rem) {
       --tw-leading: calc(var(--spacing) * 16);
       line-height: calc(var(--spacing) * 16);
-    }
-  }
-  .\32 xl\:leading-tight {
-    @media (width >= 96rem) {
-      --tw-leading: var(--leading-tight);
-      line-height: var(--leading-tight);
     }
   }
   .\32 xl\:font-light {
