@@ -40,6 +40,13 @@
   --font-Neruda: "FS Neruda";
   --breakpoint-3xl: 160rem;
 }
+/* --calculatedResponsiveFontSize: clamp(16px, 1.102vw, 24px); */
+/* 
+.resp {
+  --calculatedResponsiveFontSize: clamp(16px, 1.102vw, 24px);
+} */
+
+
 
 body {
   @apply overflow-x-hidden;
@@ -47,6 +54,9 @@ body {
 html {
   @apply overflow-x-hidden;
 }
+
+
+
 .app-container {
   @apply container max-w-[1786px] mx-auto w-full;
 }
@@ -196,17 +206,18 @@ html {
   @apply 2xl:!h-[850px] xl:!h-[640px] lg:!h-[450px] md:!h-[340px] !h-[270px] w-full object-cover;
 }
 
-@keyframes imageSlideUp {
-  from {
-    transform: translateY(10%);
+
+@keyframes kenBurns {
+  0% {
+    transform: scale(1) translateX(10%) translateY(-10%);
   }
-  to {
-    transform: translateY(0);
+  100% {
+    transform: scale(1.2) translateX(0) translateY(0);
   }
 }
 
-.image-animation {
-  animation: imageSlideUp 2s ease-in-out;
+.ken-burns {
+  animation: kenBurns 10s ease-in-out forwards;
 }
 
 .card-content {
