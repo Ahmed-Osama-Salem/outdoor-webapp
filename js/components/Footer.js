@@ -16,7 +16,7 @@ class Footer extends HTMLElement {
           </div>
         </section>
         <div class="flex flex-col items-center justify-center gap-4 text-white py-8 w-full md:h-[520px] h-auto max-w-[1786px] mx-auto">
-          <section class="flex md:flex-row flex-col items-center justify-between h-full flex-grow w-full tracking-[2px]">
+          <section class="flex relative md:flex-row flex-col items-center justify-between h-full flex-grow w-full tracking-[2px]">
             <div class="flex md:flex-row flex-col md:items-start items-center justify-between h-full border md:border-r-[#eae6e6] 2xl:px-[185px] xl:px-[170px] lg:px-[100px] md:px-[40px] w-[65%] container mx-auto md:pt-11 pt-1">
               <div class="md:mb-0 mb-10">
                 <p class="2xl:text-[21px] xl:text-[16px] uppercase font-bold text-[var(--green-main)] md:mb-10 mb-4 text-center md:text-left">Follow us</p>
@@ -63,9 +63,15 @@ class Footer extends HTMLElement {
                 </div>
               </div>
             </div>
+            <button class="absolute bottom-10 right-10 scroll-to-top md:block hidden">
+            <img src="../../assets/images/arrow_up.svg" alt="logo" class="w-20 h-20" />
+            </button>
           </section>
         </div>
-        <div class="flex flex-col md:flex-row items-center justify-between md:gap-0 gap-4 text-white py-5 md:px-10 xl:px-0 container max-w-[1786px] mx-auto w-full tracking-[2px]">
+          <button class="scroll-to-top-mobile flex justify-center md:hidden my-8">
+            <img src="../../assets/images/arrow_up.svg" alt="logo" class="w-20 h-20" />
+            </button>
+        <div class="flex flex-col md:flex-row items-center justify-between md:gap-0 gap-4 text-white py-5 px-4 md:px-10 xl:px-15 container max-w-[1786px] mx-auto w-full tracking-[2px]">
           <p class="2xl:text-[17px] xl:text-[12px] lg:text-[12px] md:text-[11.5px] text-[12px] uppercase text-[var(--color-secondary-100)]">
             © 2025 Outdoor Dreams. All Rights Reserved
           </p>
@@ -73,8 +79,24 @@ class Footer extends HTMLElement {
             Made with ❤️ from Bldr + Braid
           </p>
         </div>
+        
       </footer>
     `;
+    const scrollToTopButton = this.querySelector(".scroll-to-top");
+    const scrollToTopButtonMobile = this.querySelector(".scroll-to-top-mobile");
+
+    scrollToTopButtonMobile.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    });
+    scrollToTopButton.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    });
   }
 }
 
