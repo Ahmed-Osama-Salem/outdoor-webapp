@@ -1,10 +1,13 @@
 class Planning extends HTMLElement {
-    connectedCallback() {
-      this.innerHTML = `
+  connectedCallback() {
+    this.innerHTML = `
           
     <section
       class="h-[60vh] lg:h-[70vh] 2xl:h-screen w-screen flex items-center lg:max-h-[1080px] max-w-[1920px] mx-auto justify-center relative bg-white"
     >
+        <div data-color="blue" data-direction="right" class="plan_bottom_decorator-line  md:block hidden" style="max-width:11.625em;transform:rotate(39deg);" data-v-68586ebe="" data-v-16a93c5a="" data-animate="true"></div>
+
+    <div data-color="gray-d" data-direction="left" class="plan_top_decorator_line  md:block hidden" style="max-width:12.625em;transform:rotate(-66deg);" data-v-68586ebe="" data-v-16a93c5a="" data-animate="true"></div>
       <div
         class="absolute bottom-0 left-0 w-full h-full md:w-[90%] xl:w-[85%] lg:h-[80%]"
       >
@@ -37,8 +40,7 @@ class Planning extends HTMLElement {
       </div>
     </section>
         `;
-    }
   }
-  
-  customElements.define("planning-section", Planning);
-  
+}
+
+customElements.define("planning-section", Planning);

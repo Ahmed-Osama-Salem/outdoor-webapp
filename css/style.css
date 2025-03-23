@@ -297,6 +297,82 @@ html {
   transform: translate(-50%, -50%) rotate(143deg);
 }
 
+.plan_top_decorator_line {
+  width: 33vw;
+  font-size: 1rem;
+  position: absolute;
+  height: 0.0625em;
+  background-color: #fcf9f7; /* Blue color */
+  pointer-events: none;
+  z-index: 10;
+}
+
+.plan_top_decorator_line[data-animate="true"]:before {
+  content: "";
+  position: absolute;
+  background-color: inherit;
+  transform: scaleX(1) !important;
+  transition: transform 1.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0.2s;
+}
+
+.plan_top_decorator_line {
+  top: 40%;
+  left: 23%;
+  transform: translate(-50%, -50%) rotate(-66deg);
+  -webkit-transform: translate(-50%, -50%) rotate(-66deg);
+  -moz-transform: translate(-50%, -50%) rotate(-66deg);
+  -ms-transform: translate(-50%, -50%) rotate(-66deg);
+  -o-transform: translate(-50%, -50%) rotate(-66deg);
+}
+
+.plan_bottom_decorator-line {
+  width: 33vw;
+  font-size: 1rem;
+  position: absolute;
+  height: 0.0625em;
+  background-color: #5a90f1; /* Blue color */
+  pointer-events: none;
+  z-index: 20;
+}
+
+.plan_bottom_decorator-line[data-animate="true"]:before {
+  content: "";
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: center center;
+  transition: transform 1.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0.2s;
+  -webkit-transition: transform 1.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0.2s;
+  -moz-transition: transform 1.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0.2s;
+  -ms-transition: transform 1.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0.2s;
+  -o-transition: transform 1.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0.2s;
+}
+
+.plan_bottom_decorator-line {
+  bottom: 24%;
+  left: 30%;
+  transform: translate(-50%, -50%) rotate(39deg);
+  -webkit-transform: translate(-50%, -50%) rotate(39deg);
+  -moz-transform: translate(-50%, -50%) rotate(39deg);
+  -ms-transform: translate(-50%, -50%) rotate(39deg);
+  -o-transform: translate(-50%, -50%) rotate(39deg);
+}
+
+.hero-decorator-line {
+  @apply w-[33vw] text-[1rem] absolute bg-[#5a90f1] h-[0.0625em] pointer-events-none z-[30] xl:top-[20%] xl:left-[42%] lg:left-[52%] lg:top-[22%] md:left-[45%] md:top-[39%];
+}
+
+.hero-decorator-line[data-animate="true"]:before {
+  content: "";
+  position: absolute;
+  /* background-color: inherit; */
+  transform: scaleX(1) !important;
+  transition: transform 1.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0.2s;
+}
+
+.hero-decorator-line {
+  transform: translate(-50%, -50%) rotate(143deg);
+}
+
 .links-nav-color-scroll {
   @apply !text-white;
 }

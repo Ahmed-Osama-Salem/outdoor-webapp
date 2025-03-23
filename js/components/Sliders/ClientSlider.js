@@ -2,7 +2,7 @@ class ClientSlider extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
         <section class="w-full relative bg-[var(--color-background)] h-auto flex flex-col 2xl:py-[130px] lg:py-[20px] py-[30px]">
-        <div  data-direction="right" class="client_decorator_line" style="max-width:16.5625em;transform:rotate(139deg);" data-v-68586ebe="" data-v-76982458="" data-v-16a93c5a="" data-animate="true"></div>
+        <div  data-direction="right" class="client_decorator_line md:block hidden" style="max-width:16.5625em;transform:rotate(139deg);" data-v-68586ebe="" data-v-76982458="" data-v-16a93c5a="" data-animate="true"></div>
             <div class="xl:ml-[300px] lg:ml-[200px] md:ml-[120px] ml-0 md:px-0 px-6 w-full xl:pt-[100px] lg:pt-[30px]">
 
             <div class="flex flex-col 2xl:ml-[200px] ml-0">
