@@ -120,7 +120,11 @@ html {
 }
 /* Shrink logo when scrolled */
 .small-logo {
-  @apply 2xl:w-[45px] 2xl:h-[45px] xl:w-[35px] xl:h-[35px] w-[32px] h-[32px] transition-all duration-300;
+  @apply hidden;
+}
+
+.show-small-logo {
+  @apply block;
 }
 
 .hero-content-shadow {
@@ -260,4 +264,32 @@ html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(143deg);
+}
+
+.client_decorator_line {
+  width: 33vw;
+  font-size: 1rem;
+  position: absolute;
+  background-color: #7bac58; /* Blue color */
+  height: 0.0625em;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.client_decorator_line[data-animate="true"]:before {
+  content: "";
+  position: absolute;
+  background-color: inherit;
+  transform: scaleX(1) !important;
+  transition: transform 1.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0.2s;
+}
+
+.client_decorator_line {
+  top: 25%;
+  right: 6%;
+  transform: translate(-50%, -50%) rotate(143deg);
+}
+
+.links-nav-color-scroll {
+  @apply !text-white;
 }
