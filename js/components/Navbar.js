@@ -47,52 +47,56 @@ class Navbar extends HTMLElement {
 
     window.addEventListener("scroll", () => this.handleScroll());
   }
-
   handleScroll() {
     const currentScrollY = window.scrollY;
     const sectionBelow = this.getSectionBelowNavbar();
 
     if (sectionBelow) {
-      const computedStyle = window.getComputedStyle(sectionBelow);
-      const bgColor = computedStyle.backgroundColor;
+        const computedStyle = window.getComputedStyle(sectionBelow);
+        const bgColor = computedStyle.backgroundColor;
 
-      if (
-        bgColor &&
-        bgColor !== "rgba(0, 0, 0, 0)" &&
-        bgColor !== "transparent"
-      ) {
-        this.navbar.style.backgroundColor = bgColor;
-      } else {
-        this.navbar.style.backgroundColor = ""; // Keep default color
-      }
+        if (bgColor && bgColor !== "rgba(0, 0, 0, 0)" && bgColor !== "transparent") {
+            this.navbar.style.backgroundColor = bgColor;
+        } else {
+            this.navbar.style.backgroundColor = ""; // Keep default color
+        }
+    }
+
+    // Change text color if the background is #40403a
+    const navbarBgColor = window.getComputedStyle(this.navbar).backgroundColor;
+    if (navbarBgColor === "rgb(52, 46, 43)") { // Equivalent to #40403a in RGB
+        this.navbar.style.color = "white";
+        this.navbar.querySelectorAll("a").forEach(link => link.style.color = "white");
+    } else {
+        this.navbar.style.color = ""; // Reset to default
+        this.navbar.querySelectorAll("a").forEach(link => link.style.color = "");
     }
 
     if (currentScrollY > this.lastScrollY) {
-      // Scrolling Down
-      if (!this.isScrollingDown && currentScrollY > 100) {
-        this.isScrollingDown = true;
-        this.navbar.classList.add("move-up");
+        // Scrolling Down
+        if (!this.isScrollingDown && currentScrollY > 100) {
+            this.isScrollingDown = true;
+            this.navbar.classList.add("move-up");
 
-        setTimeout(() => {
-          this.navbar.classList.remove("move-up");
-          this.navbar.classList.add("scrolled");
-          this.logo.classList.add("small-logo");
-          this.startBtn.classList.add("start-btn-scrolled");
-        }, 300);
-      }
+            setTimeout(() => {
+                this.navbar.classList.remove("move-up");
+                this.navbar.classList.add("scrolled");
+                this.logo.classList.add("small-logo");
+                this.startBtn.classList.add("start-btn-scrolled");
+            }, 300);
+        }
     } else {
-      // Scrolling Up
-      if (this.isScrollingDown && currentScrollY < 100) {
-        this.isScrollingDown = false;
-        this.navbar.classList.remove("scrolled");
-        // this.navbar.classList.add("original");
-        this.logo.classList.remove("small-logo");
-        this.startBtn.classList.remove("start-btn-scrolled");
-      }
+        // Scrolling Up
+        if (this.isScrollingDown && currentScrollY < 100) {
+            this.isScrollingDown = false;
+            this.navbar.classList.remove("scrolled");
+            this.logo.classList.remove("small-logo");
+            this.startBtn.classList.remove("start-btn-scrolled");
+        }
     }
 
     this.lastScrollY = currentScrollY;
-  }
+}
 
   getSectionBelowNavbar() {
     const sections = document.querySelectorAll("section");
