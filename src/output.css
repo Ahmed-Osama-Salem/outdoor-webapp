@@ -6,7 +6,6 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-500: oklch(0.637 0.237 25.331);
     --color-green-600: oklch(0.627 0.194 149.214);
     --color-blue-500: #5a90f1;
     --color-gray-100: oklch(0.967 0.003 264.542);
@@ -259,21 +258,6 @@
   .bottom-8 {
     bottom: calc(var(--spacing) * 8);
   }
-  .bottom-\[7\%\] {
-    bottom: 7%;
-  }
-  .bottom-\[8\%\] {
-    bottom: 8%;
-  }
-  .bottom-\[10\%\] {
-    bottom: 10%;
-  }
-  .bottom-\[12\%\] {
-    bottom: 12%;
-  }
-  .bottom-\[17\%\] {
-    bottom: 17%;
-  }
   .bottom-\[calc\(100\%_-_97\%\)\] {
     bottom: calc(100% - 97%);
   }
@@ -285,6 +269,9 @@
   }
   .left-4 {
     left: calc(var(--spacing) * 4);
+  }
+  .left-10 {
+    left: calc(var(--spacing) * 10);
   }
   .left-12 {
     left: calc(var(--spacing) * 12);
@@ -376,6 +363,9 @@
   .mb-\[14px\] {
     margin-bottom: 14px;
   }
+  .ml-0 {
+    margin-left: calc(var(--spacing) * 0);
+  }
   .block {
     display: block;
   }
@@ -400,9 +390,6 @@
   .h-\[4rem\] {
     height: 4rem;
   }
-  .h-\[20vh\] {
-    height: 20vh;
-  }
   .h-\[25\%\] {
     height: 25%;
   }
@@ -414,9 +401,6 @@
   }
   .h-\[50px\] {
     height: 50px;
-  }
-  .h-\[55vh\] {
-    height: 55vh;
   }
   .h-\[60vh\] {
     height: 60vh;
@@ -471,12 +455,6 @@
   }
   .min-h-\[500px\] {
     min-height: 500px;
-  }
-  .min-h-\[700px\] {
-    min-height: 700px;
-  }
-  .min-h-\[800px\] {
-    min-height: 800px;
   }
   .\!w-\[80px\] {
     width: 80px !important;
@@ -707,9 +685,6 @@
   .bg-primary-500 {
     background-color: var(--color-primary-500);
   }
-  .bg-red-500 {
-    background-color: var(--color-red-500);
-  }
   .bg-white {
     background-color: var(--color-white);
   }
@@ -815,8 +790,14 @@
   .py-\[21px\] {
     padding-block: 21px;
   }
+  .py-\[30px\] {
+    padding-block: 30px;
+  }
   .py-\[80px\] {
     padding-block: 80px;
+  }
+  .py-\[90px\] {
+    padding-block: 90px;
   }
   .py-\[130px\] {
     padding-block: 130px;
@@ -906,17 +887,26 @@
   .text-\[5\.15em\] {
     font-size: 5.15em;
   }
+  .text-\[11px\] {
+    font-size: 11px;
+  }
   .text-\[12px\] {
     font-size: 12px;
   }
   .text-\[13\.6px\] {
     font-size: 13.6px;
   }
+  .text-\[14px\] {
+    font-size: 14px;
+  }
   .text-\[19px\] {
     font-size: 19px;
   }
   .text-\[22px\] {
     font-size: 22px;
+  }
+  .text-\[23px\] {
+    font-size: 23px;
   }
   .text-\[25px\] {
     font-size: 25px;
@@ -963,6 +953,10 @@
   .tracking-\[0px\] {
     --tw-tracking: 0px;
     letter-spacing: 0px;
+  }
+  .tracking-\[1\.5px\] {
+    --tw-tracking: 1.5px;
+    letter-spacing: 1.5px;
   }
   .tracking-\[2px\] {
     --tw-tracking: 2px;
@@ -1081,6 +1075,61 @@
     --tw-ease: var(--ease-in-out);
     transition-timing-function: var(--ease-in-out);
   }
+  .before\:absolute {
+    &::before {
+      content: var(--tw-content);
+      position: absolute;
+    }
+  }
+  .before\:top-0 {
+    &::before {
+      content: var(--tw-content);
+      top: calc(var(--spacing) * 0);
+    }
+  }
+  .before\:-left-8 {
+    &::before {
+      content: var(--tw-content);
+      left: calc(var(--spacing) * -8);
+    }
+  }
+  .before\:h-5 {
+    &::before {
+      content: var(--tw-content);
+      height: calc(var(--spacing) * 5);
+    }
+  }
+  .before\:w-5 {
+    &::before {
+      content: var(--tw-content);
+      width: calc(var(--spacing) * 5);
+    }
+  }
+  .before\:bg-\[url\(\'\.\.\/\.\.\/\.\.\/assets\/images\/quate\.svg\'\)\] {
+    &::before {
+      content: var(--tw-content);
+      background-image: url('../../../assets/images/quate.svg');
+    }
+  }
+  .before\:bg-contain {
+    &::before {
+      content: var(--tw-content);
+      background-size: contain;
+    }
+  }
+  .before\:bg-no-repeat {
+    &::before {
+      content: var(--tw-content);
+      background-repeat: no-repeat;
+    }
+  }
+  .before\:content-\[\'\'\] {
+    &::before {
+      content: var(--tw-content);
+      --tw-content: '';
+      content: var(--tw-content);
+    }
+  }
   .focus\:bg-\[var\(--color-blue-500\)\] {
     &:focus {
       background-color: var(--color-blue-500);
@@ -1127,6 +1176,11 @@
       bottom: 12%;
     }
   }
+  .md\:left-\[10px\] {
+    @media (width >= 48rem) {
+      left: 10px;
+    }
+  }
   .md\:left-\[60px\] {
     @media (width >= 48rem) {
       left: 60px;
@@ -1135,6 +1189,11 @@
   .md\:mx-auto {
     @media (width >= 48rem) {
       margin-inline: auto;
+    }
+  }
+  .md\:mt-7 {
+    @media (width >= 48rem) {
+      margin-top: calc(var(--spacing) * 7);
     }
   }
   .md\:mt-10 {
@@ -1150,6 +1209,11 @@
   .md\:mb-10 {
     @media (width >= 48rem) {
       margin-bottom: calc(var(--spacing) * 10);
+    }
+  }
+  .md\:ml-\[120px\] {
+    @media (width >= 48rem) {
+      margin-left: 120px;
     }
   }
   .md\:block {
@@ -1197,19 +1261,9 @@
       height: fit-content;
     }
   }
-  .md\:min-h-\[800px\] {
-    @media (width >= 48rem) {
-      min-height: 800px;
-    }
-  }
   .md\:w-1\/2 {
     @media (width >= 48rem) {
       width: calc(1/2 * 100%);
-    }
-  }
-  .md\:w-2\/3 {
-    @media (width >= 48rem) {
-      width: calc(2/3 * 100%);
     }
   }
   .md\:w-\[40\%\] {
@@ -1377,6 +1431,11 @@
       padding-block: calc(var(--spacing) * 3);
     }
   }
+  .md\:py-\[130px\] {
+    @media (width >= 48rem) {
+      padding-block: 130px;
+    }
+  }
   .md\:pt-11 {
     @media (width >= 48rem) {
       padding-top: calc(var(--spacing) * 11);
@@ -1472,6 +1531,11 @@
       left: calc(var(--spacing) * 14);
     }
   }
+  .lg\:left-\[20px\] {
+    @media (width >= 64rem) {
+      left: 20px;
+    }
+  }
   .lg\:left-\[70px\] {
     @media (width >= 64rem) {
       left: 70px;
@@ -1487,6 +1551,11 @@
       margin-top: calc(var(--spacing) * 0);
     }
   }
+  .lg\:mt-6 {
+    @media (width >= 64rem) {
+      margin-top: calc(var(--spacing) * 6);
+    }
+  }
   .lg\:mt-30 {
     @media (width >= 64rem) {
       margin-top: calc(var(--spacing) * 30);
@@ -1495,6 +1564,11 @@
   .lg\:mb-14 {
     @media (width >= 64rem) {
       margin-bottom: calc(var(--spacing) * 14);
+    }
+  }
+  .lg\:ml-\[200px\] {
+    @media (width >= 64rem) {
+      margin-left: 200px;
     }
   }
   .lg\:block {
@@ -1562,9 +1636,9 @@
       width: calc(2/3 * 100%);
     }
   }
-  .lg\:w-\[60\%\] {
+  .lg\:w-\[40\%\] {
     @media (width >= 64rem) {
-      width: 60%;
+      width: 40%;
     }
   }
   .lg\:w-\[70\%\] {
@@ -1657,11 +1731,6 @@
       padding-inline: calc(var(--spacing) * 8);
     }
   }
-  .lg\:px-10 {
-    @media (width >= 64rem) {
-      padding-inline: calc(var(--spacing) * 10);
-    }
-  }
   .lg\:px-12 {
     @media (width >= 64rem) {
       padding-inline: calc(var(--spacing) * 12);
@@ -1682,9 +1751,24 @@
       padding-block: calc(var(--spacing) * 3.5);
     }
   }
+  .lg\:py-10 {
+    @media (width >= 64rem) {
+      padding-block: calc(var(--spacing) * 10);
+    }
+  }
   .lg\:py-36 {
     @media (width >= 64rem) {
       padding-block: calc(var(--spacing) * 36);
+    }
+  }
+  .lg\:py-\[20px\] {
+    @media (width >= 64rem) {
+      padding-block: 20px;
+    }
+  }
+  .lg\:pt-\[30px\] {
+    @media (width >= 64rem) {
+      padding-top: 30px;
     }
   }
   .lg\:pt-\[100px\] {
@@ -1785,9 +1869,24 @@
       top: 0px;
     }
   }
+  .xl\:top-\[10px\] {
+    @media (width >= 80rem) {
+      top: 10px;
+    }
+  }
+  .xl\:left-\[10px\] {
+    @media (width >= 80rem) {
+      left: 10px;
+    }
+  }
   .xl\:left-\[60px\] {
     @media (width >= 80rem) {
       left: 60px;
+    }
+  }
+  .xl\:ml-\[300px\] {
+    @media (width >= 80rem) {
+      margin-left: 300px;
     }
   }
   .xl\:h-\[60vh\] {
@@ -1815,29 +1914,9 @@
       height: calc(100vh - 70px);
     }
   }
-  .xl\:min-h-\[1000px\] {
+  .xl\:w-\[35\%\] {
     @media (width >= 80rem) {
-      min-height: 1000px;
-    }
-  }
-  .xl\:min-h-\[1100px\] {
-    @media (width >= 80rem) {
-      min-height: 1100px;
-    }
-  }
-  .xl\:min-h-\[1200px\] {
-    @media (width >= 80rem) {
-      min-height: 1200px;
-    }
-  }
-  .xl\:w-1\/2 {
-    @media (width >= 80rem) {
-      width: calc(1/2 * 100%);
-    }
-  }
-  .xl\:w-2\/3 {
-    @media (width >= 80rem) {
-      width: calc(2/3 * 100%);
+      width: 35%;
     }
   }
   .xl\:w-\[50px\] {
@@ -1848,11 +1927,6 @@
   .xl\:w-\[60\%\] {
     @media (width >= 80rem) {
       width: 60%;
-    }
-  }
-  .xl\:w-\[64\%\] {
-    @media (width >= 80rem) {
-      width: 64%;
     }
   }
   .xl\:w-\[70\%\] {
@@ -1958,6 +2032,16 @@
       padding-block: 60px;
     }
   }
+  .xl\:pt-\[90px\] {
+    @media (width >= 80rem) {
+      padding-top: 90px;
+    }
+  }
+  .xl\:pt-\[100px\] {
+    @media (width >= 80rem) {
+      padding-top: 100px;
+    }
+  }
   .xl\:pt-\[180px\] {
     @media (width >= 80rem) {
       padding-top: 180px;
@@ -2006,6 +2090,11 @@
       top: 0px;
     }
   }
+  .\32 xl\:top-\[40px\] {
+    @media (width >= 96rem) {
+      top: 40px;
+    }
+  }
   .\32 xl\:left-16 {
     @media (width >= 96rem) {
       left: calc(var(--spacing) * 16);
@@ -2016,6 +2105,11 @@
       left: calc(var(--spacing) * 24);
     }
   }
+  .\32 xl\:left-\[200px\] {
+    @media (width >= 96rem) {
+      left: 200px;
+    }
+  }
   .\32 xl\:left-\[400px\] {
     @media (width >= 96rem) {
       left: 400px;
@@ -2024,6 +2118,11 @@
   .\32 xl\:mt-60 {
     @media (width >= 96rem) {
       margin-top: calc(var(--spacing) * 60);
+    }
+  }
+  .\32 xl\:ml-\[200px\] {
+    @media (width >= 96rem) {
+      margin-left: 200px;
     }
   }
   .\32 xl\:h-\[80\%\] {
@@ -2069,11 +2168,6 @@
   .\32 xl\:max-h-\[1080px\] {
     @media (width >= 96rem) {
       max-height: 1080px;
-    }
-  }
-  .\32 xl\:min-h-\[1000px\] {
-    @media (width >= 96rem) {
-      min-height: 1000px;
     }
   }
   .\32 xl\:w-1\/2 {
@@ -2154,6 +2248,16 @@
       padding-block: 11px;
     }
   }
+  .\32 xl\:py-\[130px\] {
+    @media (width >= 96rem) {
+      padding-block: 130px;
+    }
+  }
+  .\32 xl\:pt-\[100px\] {
+    @media (width >= 96rem) {
+      padding-top: 100px;
+    }
+  }
   .\32 xl\:text-3xl {
     @media (width >= 96rem) {
       font-size: var(--text-3xl);
@@ -2189,6 +2293,11 @@
       font-size: 6.8rem;
     }
   }
+  .\32 xl\:text-\[15px\] {
+    @media (width >= 96rem) {
+      font-size: 15px;
+    }
+  }
   .\32 xl\:text-\[17px\] {
     @media (width >= 96rem) {
       font-size: 17px;
@@ -2212,6 +2321,11 @@
   .\32 xl\:text-\[21px\] {
     @media (width >= 96rem) {
       font-size: 21px;
+    }
+  }
+  .\32 xl\:text-\[32px\] {
+    @media (width >= 96rem) {
+      font-size: 32px;
     }
   }
   .\32 xl\:text-\[110px\] {
@@ -2813,6 +2927,11 @@ html {
 }
 @property --tw-ease {
   syntax: "*";
+  inherits: false;
+}
+@property --tw-content {
+  syntax: "*";
+  initial-value: "";
   inherits: false;
 }
 @property --tw-shadow {
