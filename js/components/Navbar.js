@@ -53,7 +53,6 @@ class Navbar extends HTMLElement {
 
     window.addEventListener("scroll", () => this.handleScroll());
   }
-
   handleScroll() {
     const currentScrollY = window.scrollY;
     const sectionBelow = this.getSectionBelowNavbar();
@@ -87,10 +86,10 @@ class Navbar extends HTMLElement {
     }
 
     if (currentScrollY > this.lastScrollY) {
-      // Scrolling Down
-      if (!this.isScrollingDown && currentScrollY > 100) {
-        this.isScrollingDown = true;
-        this.navbar.classList.add("move-up");
+        // Scrolling Down
+        if (!this.isScrollingDown && currentScrollY > 100) {
+            this.isScrollingDown = true;
+            this.navbar.classList.add("move-up");
 
         setTimeout(() => {
           this.navbar.classList.remove("move-up");
@@ -112,7 +111,7 @@ class Navbar extends HTMLElement {
     }
 
     this.lastScrollY = currentScrollY;
-  }
+}
 
   getSectionBelowNavbar() {
     const sections = document.querySelectorAll("section");

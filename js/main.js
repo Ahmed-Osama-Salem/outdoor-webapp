@@ -8,16 +8,16 @@ document.addEventListener("DOMContentLoaded", function () {
         accordionContents[0].style.maxHeight = accordionContents[0].scrollHeight + "px";
     }
 
-    accordionHeaders.forEach((button, index) => {
-        button.addEventListener("click", function () {
+    accordionHeaders.forEach(header => {
+        header.addEventListener("click", function () {
             const content = this.nextElementSibling;
             const isActive = this.classList.contains("active");
 
-            // Close all accordions
-            accordionHeaders.forEach(header => header.classList.remove("active"));
-            accordionContents.forEach(item => item.style.maxHeight = null);
-
-            if (!isActive) {
+            if (isActive) {
+                // Close if already open
+                this.classList.remove("active");
+                content.style.maxHeight = null;
+            } else {
                 // Open clicked accordion
                 this.classList.add("active");
                 content.style.maxHeight = content.scrollHeight + "px";
