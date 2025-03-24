@@ -33,28 +33,33 @@
     </navbar-mobile>
     <!-- hero section -->
     <!-- <hero-section> </hero-section> -->
-    <main class="bg-background w-full">
+    <main
+      class="bg-background w-full xl:pr-[10px] xl:h-[786px] overflow-hidden 2xl:h-full"
+    >
       <section
-        class="max-w-[1920px] lg:min-h-[800px] 3xl:min-h-[1000px] h-[65vh] lg:h-[80vh] xl:h-[80vh] 2xl:h-[120vh] 3xl:h-[80vh] max-h-[1080px] relative mx-auto"
+        class="max-w-[1920px] overflow-hidden lg:min-h-[800px] 3xl:min-h-[1000px] h-[65vh] lg:h-[80vh] xl:h-[80vh] 2xl:h-[120vh] 3xl:h-[80vh] max-h-[1080px] relative mx-auto"
       >
         <!-- Hero Image -->
         <div class="absolute inset-0 w-full h-full">
           <div
-            class="w-full lg:w-[70%] xl:w-[70%] h-[70%] md:h-[80%] lg:h-full absolute top-0 right-0 overflow-hidden"
+            class="w-full lg:w-[70%] xl:w-[65.4rem] 2xl:w-[70%] h-[70%] md:h-[80%] lg:h-full xl:h-[100%] absolute top-0 right-0 overflow-hidden"
           >
             <div
               class="absolute z-[2] w-full h-1/4 top-0 left-0 bg-gradient-to-b from-[rgba(252,249,247,0.7)] to-[rgba(252,249,247,0)] mix-blend-lighten"
             ></div>
-            <img
-              data-aos="fade-up-right"
-              data-aos-delay="85"
-              data-aos-duration="600"
-              data-aos-easing="ease-in-out"
-              src="./assets/images/hero_section.jpg"
-              alt="Pool and Hot Tub with stone patio and stone wall"
-              class="w-full h-full object-cover aspect-auto"
-              loading="eager"
-            />
+            <div class="xl:w-[65.4rem] 2xl:w-full h-full overflow-hidden">
+              <img
+                data-aos="fade-up-right"
+                data-aos-delay="85"
+                data-aos-duration="600"
+                data-aos-easing="ease-in-out"
+                src="./assets/images/hero_section.jpg"
+                alt="Pool and Hot Tub with stone patio and stone wall"
+                class="w-full h-full aspect-auto xl:-translate-y-[6.5%] xl:translate-x-[10%] translate-x-[0% translate-y-[0%] tr scale-[1.15]"
+                style="object-position: -7px 0px; object-fit: contain"
+                loading="eager"
+              />
+            </div>
           </div>
         </div>
 
@@ -70,34 +75,35 @@
             class="relative flex items-center justify-center h-[90%] 2xl:h-full w-full md:w-[60%] lg:w-[70%] xl:w-[60%] px-4 md:px-10"
           >
             <div
-              class="relative bg-white hero-content-shadow max-w-[280px] md:max-w-sm lg:max-w-lg xl:max-w-lg 2xl:max-w-xl 3xl:max-w-xl w-full"
+              class="relative bg-white hero-content-shadow max-w-[280px] md:max-w-sm lg:max-w-lg xl:max-w-[495.89px] 2xl:max-w-xl 3xl:max-w-xl w-full xl:mb-[30px] xl:mr-[20px]"
             >
               <div class="bg-white card-content w-full">
                 <h1
-                  class="text-[44px] mb-5 lg:mb-14 md:text-6xl font-Neruda leading-[0.8] lg:text-[82px] 2xl:text-[6.8rem] text-secondary-500 tracking-wide"
+                  style="font-weight: 300"
+                  class="text-[44px] mb-5 xl:text-[81px] lg:mb-[40px] md:text-6xl font-Neruda leading-[72px] lg:text-[82px] 2xl:text-[6.8rem] text-secondary-500 tracking-wide"
                 >
                   The best memories are made outdoors
                 </h1>
                 <button
-                  class="bg-primary-500 mb-3 px-6 py-2 md:px-6 md:py-2 xl:px-12 xl:py-3.5 text-white text-lg font-Montserrat"
+                  class="bg-primary-500 mb-3 w-[142.16px] h-[39.81px] text-white text-[14.877px] font-Montserrat tracking-[1.5px]"
                 >
                   Get Started
                 </button>
                 <span
-                  class="text-base xl:text-xl font-Montserrat text-secondary-100 font-medium block mt-2"
+                  class="text-base xl:text-[14.877px] font-Montserrat text-secondary-100 font-medium block mt-1 mb-3"
                 >
                   Established in 2005
                 </span>
               </div>
               <!-- Hero Brand Logo -->
-              <div class="bg-background py-5 px-7">
+              <div class="bg-background py-[15.8688px] px-[31.73px]">
                 <img src="assets/images/hero-brand.png" alt="Brand Logo" />
               </div>
             </div>
           </div>
         </div>
         <div
-          class="hidden md:block absolute md:right-4 lg:left-8 2xl:left-16 3xl:left-11 md:bottom-[12%] lg:bottom-[7%]"
+          class="hidden md:block absolute md:right-4 lg:left-8 2xl:left-16 3xl:left-11 md:bottom-[12%] lg:bottom-[7%] xl:left-[4.4rem] xl:bottom-[82px]"
         >
           <img src="./assets/images/home-hero-arrow.svg" alt="Arrow" />
         </div>
@@ -105,7 +111,6 @@
     </main>
 
     <what-we-do-section></what-we-do-section>
-  
 
     <project-section></project-section>
     <pool-slider></pool-slider>

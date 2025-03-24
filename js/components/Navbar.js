@@ -20,10 +20,10 @@ class Navbar extends HTMLElement {
       <nav class="navbar transition-all duration-500 2xl:px-20 px-8 lg:block hidden fixed top-0 left-0 w-full z-50">
         <div class="flex justify-between items-center py-3 px-10 max-w-[1920px] w-full mx-auto">
           <a href="${homeLink}" class=" font-bold logo-container flex items-center gap-3 link-color">
-            <img src="../../assets/images/big_logo.svg" alt="logo" class="logo big-logo opacity-90 w-[240px] cursor-pointer transition-all duration-500" />
+            <img src="../../assets/images/big_logo.svg" alt="logo" class="logo big-logo opacity-90  w-[240px] cursor-pointer transition-all duration-500" />
             <img id="logoSvg" src="../../assets/images/white_logo.svg" alt="logo" class="logo small-logo  md:w-[240px] w-[200px] cursor-pointer transition-all duration-500" />
           </a>
-          <ul class="flex gap-14 items-center">
+          <ul class="flex gap-14 xl:gap-11 items-center xl:mr-2">
             <li class="relative group">
               <a class="collapsed-link link-color">Services</a>
               <ul class="dropdown-menu">
@@ -34,10 +34,10 @@ class Navbar extends HTMLElement {
                 <li><a href="#" class="nav-link">Outdoor Fireplaces</a></li>
               </ul>
             </li>
-            <li><a href="${aboutLink}" class="nav-link link-color">Project</a></li>
+            <li><a href="${aboutLink}" class="nav-link link-color">Projects</a></li>
             <li><a href="${contactLink}" class="nav-link link-color">Process</a></li>
             <li>
-              <a href="${contactLink}" class="2xl:text-[18px] xl:text-[14px] text-[13.6px] font-bold uppercase tracking-[2px] start-btn transition-colors duration-200 text-white 2xl:py-[11px] 2xl:px-[20px] xl:py-[9px] xl:px-[15px] px-[10px] py-[8px]">Get Started</a>
+              <a href="${contactLink}" class="2xl:text-[18px] xl:text-[13.4885px] text-[13.6px] font-bold uppercase tracking-[2px] start-btn transition-colors duration-200 text-white 2xl:py-[11px] 2xl:px-[20px] xl:py-[8.7px] xl:px-[15px] px-[10px] py-[8px] xl:mr-1">Get Started</a>
             </li>
           </ul>
         </div>
@@ -86,10 +86,10 @@ class Navbar extends HTMLElement {
     }
 
     if (currentScrollY > this.lastScrollY) {
-        // Scrolling Down
-        if (!this.isScrollingDown && currentScrollY > 100) {
-            this.isScrollingDown = true;
-            this.navbar.classList.add("move-up");
+      // Scrolling Down
+      if (!this.isScrollingDown && currentScrollY > 100) {
+        this.isScrollingDown = true;
+        this.navbar.classList.add("move-up");
 
         setTimeout(() => {
           this.navbar.classList.remove("move-up");
@@ -111,7 +111,7 @@ class Navbar extends HTMLElement {
     }
 
     this.lastScrollY = currentScrollY;
-}
+  }
 
   getSectionBelowNavbar() {
     const sections = document.querySelectorAll("section");
