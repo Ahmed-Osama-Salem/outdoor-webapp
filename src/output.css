@@ -1071,6 +1071,10 @@
     --tw-tracking: 1.5px;
     letter-spacing: 1.5px;
   }
+  .tracking-\[1px\] {
+    --tw-tracking: 1px;
+    letter-spacing: 1px;
+  }
   .tracking-\[2px\] {
     --tw-tracking: 2px;
     letter-spacing: 2px;
@@ -2010,6 +2014,11 @@
       bottom: 84px;
     }
   }
+  .xl\:bottom-\[87px\] {
+    @media (width >= 80rem) {
+      bottom: 87px;
+    }
+  }
   .xl\:bottom-\[89px\] {
     @media (width >= 80rem) {
       bottom: 89px;
@@ -2018,6 +2027,16 @@
   .xl\:left-\[4\.4rem\] {
     @media (width >= 80rem) {
       left: 4.4rem;
+    }
+  }
+  .xl\:left-\[4\.5rem\] {
+    @media (width >= 80rem) {
+      left: 4.5rem;
+    }
+  }
+  .xl\:left-\[4\.45rem\] {
+    @media (width >= 80rem) {
+      left: 4.45rem;
     }
   }
   .xl\:left-\[10px\] {
@@ -2053,6 +2072,16 @@
   .xl\:mb-\[30px\] {
     @media (width >= 80rem) {
       margin-bottom: 30px;
+    }
+  }
+  .xl\:mb-\[34px\] {
+    @media (width >= 80rem) {
+      margin-bottom: 34px;
+    }
+  }
+  .xl\:mb-\[36px\] {
+    @media (width >= 80rem) {
+      margin-bottom: 36px;
     }
   }
   .xl\:ml-\[300px\] {
